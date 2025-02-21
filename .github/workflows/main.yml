@@ -20,6 +20,7 @@ jobs:
 
       - name: Publish Blazor WASM
         run: |
+          cd MeinBlazorProjekt
           dotnet publish -c Release -o release
           mv release/wwwroot ./wwwroot
 
