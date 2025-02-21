@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "MeinBlazorProjekt",
   "resources": {
-    "hash": "sha256-wJO0++jdWtmW8SalRCtsq2M27dyyzvR1WZ1xICgC5pM=",
+    "hash": "sha256-5zvwba5FFQAU2dPBhMTrMsz1E9oiMAsylzxNZ/hvfPY=",
     "fingerprinting": {
-      "MeinBlazorProjekt.8m1tw3wbaq.wasm": "MeinBlazorProjekt.wasm",
+      "MeinBlazorProjekt.ur52jtj1ol.wasm": "MeinBlazorProjekt.wasm",
       "Microsoft.AspNetCore.Components.Forms.265a6oi525.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.vy89xu6am4.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.ylqmhm8v39.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -45,6 +45,7 @@
       "System.Text.Encodings.Web.n5x6mx40rp.wasm": "System.Text.Encodings.Web.wasm",
       "System.Text.Json.hclsa89ohq.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.fwcgfz0ijx.wasm": "System.Text.RegularExpressions.wasm",
+      "System.Threading.Thread.xb0jg8m8ab.wasm": "System.Threading.Thread.wasm",
       "System.Threading.jmn9lxh1h2.wasm": "System.Threading.wasm",
       "System.v3da086c8u.wasm": "System.wasm",
       "YamlDotNet.a3a6olhx3e.wasm": "YamlDotNet.wasm",
@@ -75,7 +76,7 @@
       "System.Runtime.InteropServices.JavaScript.f4ln4hfftw.wasm": "sha256-r+LQmgoVdHgFKWJvUNAR7HQZAtSw+xvBIQ6siSPsBNM="
     },
     "assembly": {
-      "MeinBlazorProjekt.8m1tw3wbaq.wasm": "sha256-kIaGCTKhQprXHAgtGjn3eQR3OvWHJHBG5oKAjuOHCdo=",
+      "MeinBlazorProjekt.ur52jtj1ol.wasm": "sha256-uoCVpVhu2E08PctiFzlpK0qRUbiwe0YywVRJLR/GBBM=",
       "Microsoft.AspNetCore.Components.Forms.265a6oi525.wasm": "sha256-VkEzbRghbEzREzxgL/j7DKDXHWUZDmbFaWMymJ8BKus=",
       "Microsoft.AspNetCore.Components.vy89xu6am4.wasm": "sha256-p27ikaaMKJhq11U367CBN8soPyc/uU4EctytCur0d9I=",
       "Microsoft.AspNetCore.Components.Web.ylqmhm8v39.wasm": "sha256-ysY4e9pupKejFLOYucYrOn75eg2qolEH2FPDiNbCPA0=",
@@ -115,6 +116,7 @@
       "System.Text.Encodings.Web.n5x6mx40rp.wasm": "sha256-pdi8rUtz97K7+q5y/AgnLY20C4reLdWB+WoFACY2+qM=",
       "System.Text.Json.hclsa89ohq.wasm": "sha256-76pvD5VwxMztkWBzgnlEBygZEeB/Z58BGg8PetwDrrA=",
       "System.Text.RegularExpressions.fwcgfz0ijx.wasm": "sha256-TwD4s3Iqpt8alGFUScsVrvA2eShNMyGOyPBKjRon1IQ=",
+      "System.Threading.Thread.xb0jg8m8ab.wasm": "sha256-bRjwAZNmqXdSnDGo+4VfvRSDenJaTlqlcTsaG4OVO2Q=",
       "System.Threading.jmn9lxh1h2.wasm": "sha256-24inb9qHwMgt3KIjfomf+IHFhkJlGDDhcK8ivbFO8Z0=",
       "System.v3da086c8u.wasm": "sha256-JR9uHwZeWzGLHbZhs4tvobv0QX0mykH6Dw/KbNqFbCA=",
       "YamlDotNet.a3a6olhx3e.wasm": "sha256-llQ8843v8DkOqwYjb5Pf75pZQDMp1dhOwXe3o8CQzk0="
