@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "MeinBlazorProjekt",
   "resources": {
-    "hash": "sha256-pw9DutmOcqM+QTmGEj5dYWvfAaupxOQ+pSx+0I8NWGo=",
+    "hash": "sha256-YDDvePhnrt/lgElAEx9PCDJpICVF1MGRTzpvDaMyjLA=",
     "fingerprinting": {
-      "MeinBlazorProjekt.npqjoa41o5.wasm": "MeinBlazorProjekt.wasm",
+      "MeinBlazorProjekt.v1q1uft76p.wasm": "MeinBlazorProjekt.wasm",
       "Microsoft.AspNetCore.Components.Forms.265a6oi525.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.ghupx4294z.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.9i18bkeoiz.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -71,7 +71,7 @@
       "System.Runtime.InteropServices.JavaScript.2qzse51b5r.wasm": "sha256-2nWN1zwezK82JRmcnLLcKzdroP7qZRNl6DW0r2jhKe4="
     },
     "assembly": {
-      "MeinBlazorProjekt.npqjoa41o5.wasm": "sha256-BfLJoZ+7RCuXy/rad6cdLAY5H8QSZJ3rNFEA8njBGws=",
+      "MeinBlazorProjekt.v1q1uft76p.wasm": "sha256-I0TUYDe+lNE+7oyQcUnvbzOrF3lolN5P0BKP9UemBPY=",
       "Microsoft.AspNetCore.Components.Forms.265a6oi525.wasm": "sha256-VkEzbRghbEzREzxgL/j7DKDXHWUZDmbFaWMymJ8BKus=",
       "Microsoft.AspNetCore.Components.ghupx4294z.wasm": "sha256-lBf5ZnKJrxlmLmtDY+4Y3K3FMmUmIuUcHxAAXDaUTHM=",
       "Microsoft.AspNetCore.Components.Web.9i18bkeoiz.wasm": "sha256-X6sUO9OQZtnd6dGjBJKc48hgxIoNfj7R+IRDvRnjWuM=",
