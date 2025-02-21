@@ -14,18 +14,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '9.0.x'
+          dotnet-version: '7.0.x'
 
-      - name: Publish Blazor WASM
+      - name: Restore and Build Blazor WASM
         run: |
           cd MeinBlazorProjekt
+          dotnet restore
+          dotnet build --configuration Release
           dotnet publish -c Release -o release
-          mv release/wwwroot ./wwwroot
+          ls -la release/wwwroot # <-- Zeigt an, ob wwwroot existiert
+          mv release/wwwroot ../wwwroot
+
+      - name: Verify wwwroot exists
+        run: ls -la wwwroot # <-- Prüft, ob die Dateien tatsächlich da sind
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
