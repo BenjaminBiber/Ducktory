@@ -3,7 +3,7 @@ import yaml
 
 # Basisordner
 base_path = "wwwroot/Enten"
-output_file = "wwwroot/images.yaml"
+output_file = "MeinBlazorProjekt/wwwroot/images.yaml"
 
 # YAML-Datenstruktur
 data = {"Enten": {}}
