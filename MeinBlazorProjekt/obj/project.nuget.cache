@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s/SfD0Th7Io=",
+  "dgSpecHash": "Cd3VAiNBqQA=",
   "success": true,
   "projectFilePath": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\MeinBlazorProjekt.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\benjamin.biber\\.nuget\\packages\\microsoft.jsinterop.webassembly\\9.0.0-rc.2.24474.3\\microsoft.jsinterop.webassembly.9.0.0-rc.2.24474.3.nupkg.sha512",
     "C:\\Users\\benjamin.biber\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.0-rc.2.24473.5\\microsoft.net.illink.tasks.9.0.0-rc.2.24473.5.nupkg.sha512",
     "C:\\Users\\benjamin.biber\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.0-rc.2.24473.5\\microsoft.net.sdk.webassembly.pack.9.0.0-rc.2.24473.5.nupkg.sha512",
+    "C:\\Users\\benjamin.biber\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512",
     "C:\\Users\\benjamin.biber\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.0-rc.2.24473.5\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.0-rc.2.24473.5.nupkg.sha512"
   ],
   "logs": []

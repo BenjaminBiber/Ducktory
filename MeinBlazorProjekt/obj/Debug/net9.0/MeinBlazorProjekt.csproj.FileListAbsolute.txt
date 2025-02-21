@@ -9,8 +9,6 @@ U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_f
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.b94e9q6sj7.pdb
-U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.d6q1n3beya.wasm
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.bpmvnis5p1.wasm
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.2z5etywfu3.wasm
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.46zr6p1ke0.wasm
@@ -340,9 +338,7 @@ U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_f
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.Watcher.78n8goatj1.wasm.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\System.Transactions.mintb2qruw.wasm.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.bpmvnis5p1.wasm.gz
-U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.b94e9q6sj7.pdb.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.2z5etywfu3.wasm.gz
-U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.d6q1n3beya.wasm.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.92zaeilx9z.wasm.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.1lqt2wrl7i.wasm.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\System.Xml.XPath.o6soe61m8u.wasm.gz
@@ -1060,9 +1056,6 @@ U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\e9v57wpc9l-tjcz0u77k5.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\u66h4n6u8v-tptq2av103.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\o0a78mnq2l-lfu7j35m59.gz
-U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\pae27vm3ue-d6q1n3beya.gz
-U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\p9jpivzlcm-b94e9q6sj7.gz
-U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\a6dc2c1dhn-c49kegv1fg.gz
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\staticwebassets.build.json
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\staticwebassets.development.json
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -1077,3 +1070,15 @@ U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\MeinBlazor
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\refint\MeinBlazorProjekt.dll
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\MeinBlazorProjekt.pdb
 U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\ref\MeinBlazorProjekt.dll
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\YamlDotNet.a3a6olhx3e.wasm
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\YamlDotNet.a3a6olhx3e.wasm.gz
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\YamlDotNet.dll
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\webcil\YamlDotNet.wasm
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\3r7wbjrdl4-a3a6olhx3e.gz
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.6tvpgcjhrn.pdb
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.5s59symqls.wasm
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.6tvpgcjhrn.pdb.gz
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.5s59symqls.wasm.gz
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\pae27vm3ue-5s59symqls.gz
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\p9jpivzlcm-6tvpgcjhrn.gz
+U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\a6dc2c1dhn-wlga98etyt.gz

@@ -8,3 +8,8 @@ public class Duckpart
     public bool IsVisible { get; set; } = true;
     public int SortOrder { get; set; }
 }
+
+public class EnteModel
+{
+    public Dictionary<string, List<string>> Enten { get; set; } = new();
+}

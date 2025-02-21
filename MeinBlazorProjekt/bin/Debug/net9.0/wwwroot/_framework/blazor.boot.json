@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MeinBlazorProjekt",
   "resources": {
-    "hash": "sha256-Nv5dPbRkvRwiDtSuZRApV2M8XM5DVWJOFM+r/jo9yqU=",
+    "hash": "sha256-4H1FgMCHn575Szw0754srut2iWqLplcHxty+ZkxEEZE=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.bpmvnis5p1.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.46zr6p1ke0.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -25,6 +25,7 @@
       "Microsoft.Extensions.Primitives.8254rxdjkr.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.o6yx6j4v0y.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.92zaeilx9z.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
+      "YamlDotNet.a3a6olhx3e.wasm": "YamlDotNet.wasm",
       "Microsoft.CSharp.3m6l03ft64.wasm": "Microsoft.CSharp.wasm",
       "Microsoft.VisualBasic.Core.96hfqrav27.wasm": "Microsoft.VisualBasic.Core.wasm",
       "Microsoft.VisualBasic.ne27mfir6f.wasm": "Microsoft.VisualBasic.wasm",
@@ -201,8 +202,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "MeinBlazorProjekt.d6q1n3beya.wasm": "MeinBlazorProjekt.wasm",
-      "MeinBlazorProjekt.b94e9q6sj7.pdb": "MeinBlazorProjekt.pdb"
+      "MeinBlazorProjekt.5s59symqls.wasm": "MeinBlazorProjekt.wasm",
+      "MeinBlazorProjekt.6tvpgcjhrn.pdb": "MeinBlazorProjekt.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hjjnedf5fu.js": "sha256-U+stuE7IXlmMsJFTTp8538F7skLX5I4FvQ0jxOfFg6Y="
@@ -245,6 +246,7 @@
       "Microsoft.Extensions.Primitives.8254rxdjkr.wasm": "sha256-YF4XtJAzZv/RJwx0l9tI9ya4CHakNOLP8XZigc2CGIM=",
       "Microsoft.JSInterop.o6yx6j4v0y.wasm": "sha256-sOKFmtbdKBLx4gCz3wQMguLOWLM07XQj9HS8+WOVKLs=",
       "Microsoft.JSInterop.WebAssembly.92zaeilx9z.wasm": "sha256-/0nacetpiYzVDlwe0zenbZaOrZIEtUIk1mFPHfJhGik=",
+      "YamlDotNet.a3a6olhx3e.wasm": "sha256-llQ8843v8DkOqwYjb5Pf75pZQDMp1dhOwXe3o8CQzk0=",
       "Microsoft.CSharp.3m6l03ft64.wasm": "sha256-uzBkcLPCue1FqGixIc9+DzBetXeB0K6J1EqNB02UJ50=",
       "Microsoft.VisualBasic.Core.96hfqrav27.wasm": "sha256-T/U8SSqk+qXtILMa94VRvDwz3YVbcGutJ499A3pIGWU=",
       "Microsoft.VisualBasic.ne27mfir6f.wasm": "sha256-71lqH5e1ewxOZHj8LejER1af0zYZnliM5BXFfY45AJw=",
@@ -412,10 +414,10 @@
       "WindowsBase.duw8tye9rc.wasm": "sha256-u4J6B4QZKaz/MboN/YWyKwBK5G4bSw6uQjiZ+g/saZs=",
       "mscorlib.ojm2nv3phn.wasm": "sha256-pKFHSgZnZyVtsRPI7nTtia0qocy8F4DUZumTdcGJ6KM=",
       "netstandard.25748u4t1d.wasm": "sha256-2kIiN/gxZXm71QytM9H9+rCtWVkg1CoDm1LxpsQA4CY=",
-      "MeinBlazorProjekt.d6q1n3beya.wasm": "sha256-OzJanZ2mrH7NNOfqBY17RHLLRP4QO8bKBpVkz8p9pv4="
+      "MeinBlazorProjekt.5s59symqls.wasm": "sha256-hcnQrBmrRbhI2M9NB/yBT7FEUHIo4GBtrOoc7K0kxk8="
     },
     "pdb": {
-      "MeinBlazorProjekt.b94e9q6sj7.pdb": "sha256-8UGiRydhP8vSfXH/m4OYaGbhBsDjQ601FDAtQa3lSWQ="
+      "MeinBlazorProjekt.6tvpgcjhrn.pdb": "sha256-Sp2zYebnhzQYVsh3SbcAceD/wctzf7WMpIGt6yDFqCc="
     }
   },
   "cacheBootResources": true,

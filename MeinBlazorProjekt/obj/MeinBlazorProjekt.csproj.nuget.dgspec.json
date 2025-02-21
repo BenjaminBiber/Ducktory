@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[9.0.0-rc.2.24473.5, )",
               "autoReferenced": true
+            },
+            "YamlDotNet": {
+              "target": "Package",
+              "version": "[16.3.0, )"
             }
           },
           "imports": [

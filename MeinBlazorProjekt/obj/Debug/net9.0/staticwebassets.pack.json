@@ -117,6 +117,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\images.yaml",
+      "PackagePath": "staticwebassets\\images.yaml"
+    },
+    {
       "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
