@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Installiere Python-Abhängigkeiten
+        run: pip install pyyaml
+
       - name: YAML-Datei generieren
         run: |
           python .github/scripts/generate_yaml.py
