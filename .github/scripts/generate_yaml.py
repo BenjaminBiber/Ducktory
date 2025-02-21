@@ -2,7 +2,7 @@ import os
 import yaml
 
 # Basisordner
-base_path = "wwwroot/Enten"
+base_path = "MeinBlazorProjekt/wwwroot/Enten"
 output_file = "MeinBlazorProjekt/wwwroot/images.yaml"
 
 # YAML-Datenstruktur
