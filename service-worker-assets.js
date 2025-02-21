@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-twVYnVtQsGmOJ2TNkFxDs+ArQIKIFDVxAvwK81X07Kw=",
+      "hash": "sha256-DjcsN\/OJD951cR02EAo4M+4eiy1YIYhjFFN1EZDn5RI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-7kLFBw5bD52FUbE63xwmvY\/dFRGGHe+lWBTd3K8QR3Q=",
+      "hash": "sha256-Ytco99eEINVFm5qnfbIMTTu3QOev3ILak871ZMl5K5E=",
       "url": "_framework\/Enten-Konfigurator.wasm"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Net.Primitives.wasm"
     },
     {
-      "hash": "sha256-ee4o8HhbHbVMrb5j2ZxOIyweITkkUaXNr3FhPgGBpIc=",
+      "hash": "sha256-6XZv8UBuZK1m\/gepeXME2\/GLxWZxSosehe2C3Nl23G0=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm"
     },
     {
-      "hash": "sha256-usy7O80thX\/zuzaO2PPYDybj0QAu3qA+vYBESA77bOQ=",
+      "hash": "sha256-FZm5jOzmvrJ0WS\/M70yvI4ZIVST6RsVEPZepG9HUdx8=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -169,7 +169,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-9TyW4KWMYPL3BgmCsxo3ZT4rkKBAvAUQ5uYO9fxu\/c4=",
+      "hash": "sha256-gznBFI7kHdp8wonXSgvSlwsJl0W783n+hwqXHwlRlXo=",
       "url": "index.html"
     },
     {
@@ -177,5 +177,5 @@
       "url": "manifest.webmanifest"
     }
   ],
-  "version": "XfEr+7v7"
+  "version": "bOJ+h09y"
 };

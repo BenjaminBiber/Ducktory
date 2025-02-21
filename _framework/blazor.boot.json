@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Enten-Konfigurator",
   "resources": {
-    "hash": "sha256-Xs8pBVMNsImXnUcmd851XaTrK2x7ThDkLDoTpDuMYuY=",
+    "hash": "sha256-TX74hqPvJVNqv0xcwQsTMon7D5dhLGU+SCBTZQntwRM=",
     "jsModuleNative": {
       "dotnet.native.8.0.10.yjygb8cd0e.js": "sha256-QVxMlY7ohmjgde/bZMA0dlWDAeuUP+tEfkiSdg4DFcE="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "Enten-Konfigurator.wasm": "sha256-7kLFBw5bD52FUbE63xwmvY/dFRGGHe+lWBTd3K8QR3Q=",
+      "Enten-Konfigurator.wasm": "sha256-Ytco99eEINVFm5qnfbIMTTu3QOev3ILak871ZMl5K5E=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-LIpzpesXnWECmKpRZRM3DPBWoOW8/lJH8JyqXk3FkqY=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-zHTkqN8duE5S+fZQQKVnNFumqyg6d6BMIzGYRqnL7F4=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-3eOyO4ym/P4OFyhNf/04qtnuLbZdmqrUkiR7WpF8dh0=",
@@ -40,10 +40,10 @@
       "System.Memory.wasm": "sha256-BseRKZRihim0QeTCl5s3LZwimskjpAOKEqk0Mv1kbfA=",
       "System.Net.Http.wasm": "sha256-UCHdL+XnhQo0ga/XqQH/SylPOjXNfhp0ET4yy72Drn4=",
       "System.Net.Primitives.wasm": "sha256-cqxNuERyW6tEVghDmThKYi9Lq5z12psifo2jnPaSNJQ=",
-      "System.Private.CoreLib.wasm": "sha256-ee4o8HhbHbVMrb5j2ZxOIyweITkkUaXNr3FhPgGBpIc=",
+      "System.Private.CoreLib.wasm": "sha256-6XZv8UBuZK1m/gepeXME2/GLxWZxSosehe2C3Nl23G0=",
       "System.Private.Uri.wasm": "sha256-9Wf4Z863deqvAGVsyWBwCb98z7pe886ouL1f6d6fVnw=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-4Gi//PDDYjTp35qEywUmv7ZPBIb4hFRwdZgq0P79/bA=",
-      "System.Runtime.wasm": "sha256-usy7O80thX/zuzaO2PPYDybj0QAu3qA+vYBESA77bOQ=",
+      "System.Runtime.wasm": "sha256-FZm5jOzmvrJ0WS/M70yvI4ZIVST6RsVEPZepG9HUdx8=",
       "System.Text.Encodings.Web.wasm": "sha256-hmEqWvCZQnS2F8DAjTdmesIMijXij07DuFxe0SVocRQ=",
       "System.Text.Json.wasm": "sha256-B+c4ikAwfzwKz9343e3hJI6xG2JYzHMwF0PWZl6DuoY=",
       "System.Text.RegularExpressions.wasm": "sha256-wEHv8zSPfibWXTDcOYr6yaWO1ZDflORcHqJKw38gnAk="
