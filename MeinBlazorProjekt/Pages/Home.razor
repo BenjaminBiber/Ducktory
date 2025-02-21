@@ -1,7 +1,217 @@
 ﻿@page "/"
+@using System.Net
+@using Enten.Components.Classes
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inject HttpClient Http
+@inject IWebAssemblyHostEnvironment _env
+@inject IJSRuntime JS
 
 <PageTitle>Home</PageTitle>
+<div id="page">
+    <div id="pic">
+        @foreach(var folder in FoldersWithPngFiles.Where(x => x.IsVisible).OrderBy(x => x.SortOrder))
+        {
+            <img class="DuckPartImage" alt="@folder.Folder" src="@folder.currentPicture" />
+        }
+    </div>
 
-<h1>Hello, world!</h1>
+    <div class="Controls">
+        <div class="partswitch">
+            <p>Ebene</p>
+            <p>Sichtbarkeit</p>
+            <p>links</p>
+            <p>Teil</p>
+            <p>Rechts</p>
+        </div>
+        @foreach (var folder in FoldersWithPngFiles.OrderByDescending(x => x.SortOrder))
+        {
+            <PartSwithc SortOrder="@(o => folder.SortOrder = o)" isVisible="@(b => folder.IsVisible = b)" currentImage="@(s => folder.currentPicture = s)" Duckpart="folder"></PartSwithc>
+        }
+        <div style="display: flex; flex-direction: column; justify-content: center; gap: 1em; margin-top: 2em;">
+            <label for="upload" style="text-align: center; font-weight: 800; font-size: 1.5em;">Bild Hochladen (.png)</label>
+            <div class="upload" id="upload">
+                <div class="input_Div">
+                    <label for="select">Ordner auswählen</label>
+                    <select id="select" @bind="selectedElement">
+                        @foreach (var item in folders)
+                        {
+                            <option value="@item">@ReplaceName(item)</option>
+                        }
+                    </select>
+                    <InputFile multiple OnChange="HandleFileSelected"/>
+                </div>
 
-Welcome to your new app.
+                <div class="Upload_div">
+                    <label for="name">Neuen Ordner erstellen</label>
+                    <input id="name" placeholder="Ordnername" @bind="newFolderName" type="text"></input>
+                    <button @onclick="CreateNewFolder">Ordner speichern</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+<style>
+    .upload{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 2.5em;
+    }
+    
+    .input_Div,.Upload_div{
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #page {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .DuckPartImage
+    {
+        width: 100%;
+        position: absolute;
+    }
+    
+    #pic {
+        position: relative;
+        width: 80vh;
+    }
+    
+    .Controls {
+        width: 35em;
+        padding: 2.5%;
+        gap: 5%;
+        border: 2px solid black;
+        border-radius: 1em;
+    }
+
+    .partswitch {
+        display: flex;
+        width: 30em;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+    }
+</style>
+
+@code
+{
+    public List<Duckpart> FoldersWithPngFiles { get; set; } = [];
+    private string UploadMessage { get; set; }
+    private string selectedElement = "";
+    private string newFolderName = "";
+    private List<string> folders = [];
+    private List<string> imageUrls;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        GetFoldersInWwwRoot("Enten");
+    }
+
+    public async Task ChangeImage(string newImage, Duckpart folder)
+    {
+        folder.currentPicture = newImage;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task CopyDivToClipboard()
+    {
+        await JS.InvokeVoidAsync("saveAsImage");
+    }
+    
+    
+    private void CreateNewFolder()
+    {
+        string path = Path.Combine(_env.Environment + @"\Enten", newFolderName);
+        if (Path.Exists(path))
+        {
+            UploadMessage = "Ordner existiert bereits!";
+            return;
+        }
+        Directory.CreateDirectory(path);
+        GetFoldersInWwwRoot("Enten");
+        newFolderName = string.Empty;
+    }
+    
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        foreach (var file in e.GetMultipleFiles())
+        {
+            if (file.ContentType == "image/png")
+            {
+                var filePath = Path.Combine(_env.Environment, selectedElement, file.Name);
+
+                await using var stream = file.OpenReadStream();
+                await using var fileStream = File.Create(filePath);
+                await stream.CopyToAsync(fileStream);
+                UploadMessage = "Upload erfolgreich!";
+            }
+        }
+
+        if(UploadMessage == "Upload erfolgreich!")
+        {
+            GetFoldersInWwwRoot("Enten");
+            return;
+        }
+        
+        UploadMessage = "falscher Dateityp!";
+        StateHasChanged();
+    }
+    
+    public void GetFoldersInWwwRoot(string subDirectory = "")
+    {
+        string path = Path.Combine(_env.Environment, subDirectory);
+        
+        if (!Directory.Exists(path))
+        {
+            throw new DirectoryNotFoundException($"Das Verzeichnis {path} existiert nicht.");
+        }
+        
+        folders = new List<string>(Directory.GetDirectories(path));
+        
+        GetPngFilesInFolders(folders);
+    }
+
+    private string ReplaceName(string original)
+    {
+        return original.Replace(_env.Environment, "").Replace("\\", "/");
+    }
+    
+    public void GetPngFilesInFolders(List<string> folders)
+    {
+        FoldersWithPngFiles.Clear();
+        int counter = 0;
+        foreach (var folder in folders)
+        {
+            var pictures = new List<string>();
+            foreach (var file in Directory.GetFiles(folder, "*.png", SearchOption.AllDirectories))
+            {
+                string relativePath = file.Replace(_env.Environment, "").Replace("\\", "/");
+                pictures.Add(relativePath);
+            }
+
+            if (pictures.Any())
+            {
+                var item = new Duckpart(){Folder = folder, Pictures = pictures, currentPicture = GetCurrentPicture(pictures), SortOrder = counter, IsVisible = getVisisbility(pictures)};
+                FoldersWithPngFiles.Add(item);
+                counter++;
+            }
+        }
+    }
+    
+    private bool getVisisbility(List<string> pictures)
+    {
+        return pictures.Any(x => x.Contains("00000"));
+    }
+    
+    private string GetCurrentPicture(List<string> pictures)
+    {
+        return pictures.Any(x => x.Contains("00000")) ? pictures.FirstOrDefault(x => x.Contains("00000")) : pictures.FirstOrDefault();
+    }
+}

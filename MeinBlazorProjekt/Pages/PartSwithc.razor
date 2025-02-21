@@ -1,0 +1,71 @@
+﻿@using Enten.Components.Classes
+
+<div class="partswitch">
+    <InputNumber class="part" id="index"
+                 type="number"
+                 Value="@Duckpart.SortOrder"
+                 ValueChanged="(int i) => OnSortChanged(i)"
+                 ValueExpression="@(() => Duckpart.SortOrder)"/>
+    <input class="part" id="visible" type="checkbox" value="@Duckpart.IsVisible" @onchange="@(() => isVisible.InvokeAsync(!Duckpart.IsVisible))"/>
+    <button class="part btn" disabled="@(Duckpart.Pictures.Count < 1)" @onclick="@(() => onButtonPress(false))">@("<")</button>
+    
+    <p class="part">@getFoldername(@Duckpart.Folder)</p>
+    <button class="part btn" disabled="@(Duckpart.Pictures.Count < 1)" @onclick="@(() => onButtonPress(false))">@(">")</button>
+
+    
+</div>
+
+<style>
+    .part {
+        width: 6em;
+    }
+    
+    .btn {
+        border: none;
+        background: none;
+        width: 2em !important;
+        font-weight: 800;
+        font-size: 2em;
+    }
+    
+    .partswitch {
+        display: flex;
+        width: 30em;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+    }
+</style>
+@code {
+    [Parameter] public Duckpart Duckpart { get; set; }
+    [Parameter] public EventCallback<string> currentImage { get; set; }
+    [Parameter] public EventCallback<bool> isVisible { get; set; }
+    [Parameter] public EventCallback<int> SortOrder { get; set; }
+    
+    private string getFoldername(string folderName)
+    {
+        return folderName.Split(@"\").Last();
+    }
+
+    public void test()
+    {
+        Console.WriteLine("test");
+    }
+
+    private void OnSortChanged(int i)
+    {
+        SortOrder.InvokeAsync(i);
+    }
+    
+    private async Task onButtonPress(bool right)
+    {
+        if (Duckpart.Pictures.Count > 1)
+        {
+            int currentIndex = Duckpart.Pictures.IndexOf(Duckpart.currentPicture);
+            int nextIndex = right ? (currentIndex + 1) % Duckpart.Pictures.Count : (currentIndex - 1 + Duckpart.Pictures.Count) % Duckpart.Pictures.Count;
+
+            Duckpart.currentPicture = Duckpart.Pictures[nextIndex];
+            await currentImage.InvokeAsync(Duckpart.currentPicture);
+        }
+    }
+
+}
