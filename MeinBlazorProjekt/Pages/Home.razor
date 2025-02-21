@@ -32,10 +32,11 @@
         }
         <div style="display: flex; flex-direction: column; justify-content: center; gap: 1em; margin-top: 2em;">
             <label for="upload" style="text-align: center; font-weight: 800; font-size: 1.5em;">Bild Hochladen (.png)</label>
+            <p style="color: red;">@error</p>
+            <button @onclick="GetPicture">📥 Bild herunterladen</button>
             <div class="upload" id="upload">
                 <div class="input_Div">
                     <label for="select">Ordner auswählen</label>
-                    <p style="color: red;">@error</p>
                     <select id="select" @bind="selectedElement">
                         @foreach (var item in folders)
                         {
@@ -122,6 +123,14 @@
     private string? fileContentBase64;
     private string fileName = "";
     public string error = "";
+
+    private async Task GetPicture()
+    {
+        string apiUrl = "https://api.screenshotmachine.com?\nkey=2a3a0a\n&url=https%3A%2F%2Fbenjaminbiber.github.io%2FDucktory%2F\n&device=desktop\n&dimension=500x500\n&format=png\n&cacheLimit=0\n&delay=2000\n&selector=.DuckPartImage"; // Ersetze mit deiner URL
+        byte[] imageBytes = await Http.GetByteArrayAsync(apiUrl);
+
+        await JS.InvokeVoidAsync("saveAsFile", "screenshot.png", "image/png", imageBytes);
+    }
     
     protected override async Task OnInitializedAsync()
     {
