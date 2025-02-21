@@ -1,5 +1,32 @@
 Enten:
   01_bkg:
-    - Enten/01_bkg/00000.png
-    - Enten/01_bkg/01_labomba.png
-    
+  - Enten/01_bkg/00000.png
+  - Enten/01_bkg/1_labomba.png
+  - Enten/01_bkg/1_smokeyfire.png
+  02_body:
+  - Enten/02_body/00000.png
+  - Enten/02_body/1_skeleton.png
+  03_feet:
+  - Enten/03_feet/00000.png
+  - Enten/03_feet/1_shoe.png
+  04_mouth:
+  - Enten/04_mouth/00000.png
+  - Enten/04_mouth/cigarette.png
+  05_eyes:
+  - Enten/05_eyes/00000.png
+  - Enten/05_eyes/1_irritated.png
+  - Enten/05_eyes/1_sleepy.png
+  - Enten/05_eyes/L8,R1,C1,Ebene 8,visible,Normal,255.png
+  06_hats:
+  - Enten/06_hats/00000.png
+  - Enten/06_hats/L9,R1,C1,Ebene 9,visible,Normal,255.png
+  - Enten/06_hats/Zylinder.png
+  - Enten/06_hats/aluhut.png
+  - Enten/06_hats/cactus.png
+  - Enten/06_hats/flower.png
+  07_Foreground:
+  - Enten/07_Foreground/1_blackhair.png
+  - Enten/07_Foreground/1_radioactive.png
+  - Enten/07_Foreground/1_sauce.png
+  - Enten/07_Foreground/1_zzz.png
+  - Enten/07_Foreground/poop.png
