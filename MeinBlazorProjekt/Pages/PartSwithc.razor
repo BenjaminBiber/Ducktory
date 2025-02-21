@@ -6,7 +6,7 @@
                  Value="@Duckpart.SortOrder"
                  ValueChanged="(int i) => OnSortChanged(i)"
                  ValueExpression="@(() => Duckpart.SortOrder)"/>
-    <input class="part" id="visible" type="checkbox" value="@Duckpart.IsVisible" @onchange="@(() => isVisible.InvokeAsync(!Duckpart.IsVisible))"/>
+    <InputCheckbox class="part" id="visible" type="checkbox" @bind-Value="Visible"/>
     <button class="part btn" disabled="@(Duckpart.Pictures.Count < 1)" @onclick="@(() => onButtonPress(false))">@("<")</button>
     
     <p class="part">@getFoldername(@Duckpart.Folder)</p>
@@ -40,15 +40,33 @@
     [Parameter] public EventCallback<string> currentImage { get; set; }
     [Parameter] public EventCallback<bool> isVisible { get; set; }
     [Parameter] public EventCallback<int> SortOrder { get; set; }
-    
+
+    private bool _visible;
+
+    public bool Visible
+    {
+        get => _visible;
+        set
+        {
+            _visible = value;
+            isVisible.InvokeAsync(_visible);
+            Duckpart.IsVisible = _visible;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Visible = Duckpart.IsVisible;
+    }
+
     private string getFoldername(string folderName)
     {
         return folderName.Split(@"\").Last();
     }
 
-    public void test()
+    public bool GetVisibility()
     {
-        Console.WriteLine("test");
+        return Duckpart.IsVisible;
     }
 
     private void OnSortChanged(int i)

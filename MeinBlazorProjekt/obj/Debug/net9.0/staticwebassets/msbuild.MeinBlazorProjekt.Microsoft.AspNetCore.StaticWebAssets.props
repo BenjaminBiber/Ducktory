@@ -516,8 +516,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fmuopg91k1</Fingerprint>
-      <Integrity>+YXl8OLjRK+tKpGGNu2Uwv5I93BPOS6Z4oAeElpUfKU=</Integrity>
+      <Fingerprint>hntiykk03y</Fingerprint>
+      <Integrity>ndhhvcCjFd0eCZyJOLq6xGMqR/99uWQ8/ysm0J/ze2o=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images.yaml'))</OriginalItemSpec>
