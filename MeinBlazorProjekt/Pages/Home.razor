@@ -35,6 +35,7 @@
             <div class="upload" id="upload">
                 <div class="input_Div">
                     <label for="select">Ordner auswählen</label>
+                    <p style="color: red;">@error</p>
                     <select id="select" @bind="selectedElement">
                         @foreach (var item in folders)
                         {
@@ -119,6 +120,7 @@
     private IBrowserFile? uploadedFile;
     private string? fileContentBase64;
     private string fileName = "";
+    public string error = "";
     
     protected override async Task OnInitializedAsync()
     {
@@ -193,7 +195,7 @@
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Fehler beim Laden der YAML-Datei: " + ex.Message);
+            ShowError("Fehler beim Laden der YAML-Datei: " + ex.Message);
             return null;
         }
     }
@@ -243,7 +245,14 @@
         }
         else
         {
-            Console.WriteLine($"Fehler: {response.StatusCode}");
+            ShowError($"Fehler: {response.StatusCode}");
         }
+    }
+
+    private async Task ShowError(string _error)
+    {
+        error = _error;
+        Thread.Sleep(5000);
+        error = "";
     }
 }
