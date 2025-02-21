@@ -63,6 +63,21 @@
 
 </div>
 
+<script>
+    window.saveAsFile = (fileName, contentType, byteArray) => {
+        const blob = new Blob([new Uint8Array(byteArray)], { type: contentType });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    };
+
+</script>
+
 <style>
     .upload{
         display: flex;
@@ -126,7 +141,7 @@
 
     private async Task GetPicture()
     {
-        string apiUrl = "https://api.screenshotmachine.com?\nkey=2a3a0a\n&url=https%3A%2F%2Fbenjaminbiber.github.io%2FDucktory%2F\n&device=desktop\n&dimension=500x500\n&format=png\n&cacheLimit=0\n&delay=2000\n&selector=.DuckPartImage"; // Ersetze mit deiner URL
+        string apiUrl = "https://api.screenshotmachine.com?key=2a3a0a&url=https%3A%2F%2Fbenjaminbiber.github.io%2FDucktory%2F&device=desktop&dimension=500x500&format=png&cacheLimit=0&delay=2000&selector=.DuckPartImage"; // Ersetze mit deiner URL
         byte[] imageBytes = await Http.GetByteArrayAsync(apiUrl);
 
         await JS.InvokeVoidAsync("saveAsFile", "screenshot.png", "image/png", imageBytes);
