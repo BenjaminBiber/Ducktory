@@ -156,7 +156,7 @@
     private async Task SwitchPicture()
     {
         await JS.InvokeVoidAsync("RemoveImage");
-        var imageUrls = FoldersWithPngFiles.Where(x => x.IsVisible).Select(x => $"{Navigation.BaseUri}{x.currentPicture}").ToArray();
+        var imageUrls = FoldersWithPngFiles.OrderBy(x => x.SortOrder).Where(x => x.IsVisible).Select(x => $"{Navigation.BaseUri}{x.currentPicture}").ToArray();
         await JS.InvokeVoidAsync("renderImagesOnCanvas", (object)imageUrls);
 
     }
