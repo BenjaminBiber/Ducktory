@@ -1,9 +1,11 @@
 ﻿@page "/"
+@using System.Diagnostics
 @using System.Net
 @using System.Text
 @using Enten.Components.Classes
 @using Microsoft.AspNetCore.Components.WebAssembly.Hosting
 @using YamlDotNet.Serialization
+@inject NavigationManager Navigation
 @using YamlDotNet.Serialization.NamingConventions
 @inject HttpClient Http
 @inject IWebAssemblyHostEnvironment _env
@@ -12,10 +14,7 @@
 <PageTitle>Home</PageTitle>
 <div id="page">
     <div id="pic">
-        @foreach(var folder in FoldersWithPngFiles.Where(x => x.IsVisible).OrderBy(x => x.SortOrder))
-        {
-            <img class="DuckPartImage" alt="@folder.Folder" src="@folder.currentPicture" />
-        }
+        <canvas style="width: 100%; height: 100%" id="myCanvas"></canvas>
     </div>
 
     <div class="Controls">
@@ -28,55 +27,43 @@
         </div>
         @foreach (var folder in FoldersWithPngFiles.OrderByDescending(x => x.SortOrder))
         {
-            <PartSwithc SortOrder="@(o => folder.SortOrder = o)" isVisible="@(b => folder.IsVisible = b)" currentImage="@(s => folder.currentPicture = s)" Duckpart="folder"></PartSwithc>
+            <PartSwithc SortOrder="@(o => { folder.SortOrder = o; SwitchPicture(); })" isVisible="@(b => { folder.IsVisible = b; SwitchPicture(); })" currentImage="@(s => { folder.currentPicture = s; SwitchPicture(); })" Duckpart="folder"></PartSwithc>
         }
-        <div style="display: flex; flex-direction: column; justify-content: center; gap: 1em; margin-top: 2em;">
-            <label for="upload" style="text-align: center; font-weight: 800; font-size: 1.5em;">Bild Hochladen (.png)</label>
-            <p style="color: red;">@error</p>
-            <button @onclick="GetPicture">📥 Bild herunterladen</button>
-            <div class="upload" id="upload">
-                <div class="input_Div">
-                    <label for="select">Ordner auswählen</label>
-                    <select id="select" @bind="selectedElement">
-                        @foreach (var item in folders)
+        @if (true)
+        {
+            <div style="display: flex; flex-direction: column; justify-content: center; gap: 1em; margin-top: 2em;">
+                <label for="upload" style="text-align: center; font-weight: 800; font-size: 1.5em;">Bild Hochladen (.png)</label>
+                <p style="color: red;">@error</p>
+                <button @onclick="GetPicture">📥 Bild herunterladen</button>
+                <div class="upload" id="upload">
+                    <div class="input_Div">
+                        <label for="select">Ordner auswählen</label>
+                        <select id="select" @bind="selectedElement">
+                            @foreach (var item in folders)
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        </select>
+                        <InputFile OnChange="HandleFileSelected" />
+
+                        @if (uploadedFile != null)
                         {
-                            <option value="@item">@item</option>
+                            <p>Datei: @fileName</p>
+                            <button @onclick="UploadToGitHub"> Bild Hochladen</button>
                         }
-                    </select>
-                    <InputFile OnChange="HandleFileSelected" />
+                    </div>
 
-                    @if (uploadedFile != null)
-                    {
-                        <p>Datei: @fileName</p>
-                        <button @onclick="UploadToGitHub"> Bild Hochladen</button>
-                    }
-                </div>
-
-                <div class="Upload_div">
-                    <label for="name">Neuen Ordner erstellen</label>
-                    <input id="name" placeholder="Ordnername" @bind="newFolderName" type="text"></input>
-                    <button @onclick="CreateNewFolder">Ordner speichern</button>
+                    <div class="Upload_div">
+                        <label for="name">Neuen Ordner erstellen</label>
+                        <input id="name" placeholder="Ordnername" @bind="newFolderName" type="text"></input>
+                        <button @onclick="CreateNewFolder">Ordner speichern</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
 
 </div>
-
-<script>
-    window.saveAsFile = (fileName, contentType, byteArray) => {
-        const blob = new Blob([new Uint8Array(byteArray)], { type: contentType });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = fileName;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    };
-
-</script>
 
 <style>
     .upload{
@@ -124,6 +111,34 @@
         justify-content: space-between;
         margin-bottom: 0.5em;
     }
+    
+    @@media (max-width: 678px)
+    {
+        #page {
+            flex-direction: column;
+        }
+        
+        .partswitch {
+            width: 100% !important;
+        }
+        
+        .DuckPartImage {
+            width:  100vw;
+        }
+        
+        #pic {
+            height:  100vw;
+            width: 100vw;
+        }
+        
+        .Controls {
+            width: 100vw;
+        }
+        
+        .upload {
+            flex-direction: column;
+        }
+    }
 </style>
 
 @code
@@ -133,31 +148,30 @@
     private string selectedElement = "";
     private string newFolderName = "";
     private List<string> folders = [];
-    private List<string> imageUrls;
     private IBrowserFile? uploadedFile;
     private string? fileContentBase64;
     private string fileName = "";
     public string error = "";
 
+    private async Task SwitchPicture()
+    {
+        await JS.InvokeVoidAsync("RemoveImage");
+        var imageUrls = FoldersWithPngFiles.Where(x => x.IsVisible).Select(x => $"{Navigation.BaseUri}{x.currentPicture}").ToArray();
+        await JS.InvokeVoidAsync("renderImagesOnCanvas", (object)imageUrls);
+
+    }
+
     private async Task GetPicture()
     {
-        string apiUrl = "https://api.screenshotmachine.com?key=2a3a0a&url=https%3A%2F%2Fbenjaminbiber.github.io%2FDucktory%2F&device=desktop&dimension=500x500&format=png&cacheLimit=0&delay=2000&selector=.DuckPartImage"; // Ersetze mit deiner URL
-        byte[] imageBytes = await Http.GetByteArrayAsync(apiUrl);
-
-        await JS.InvokeVoidAsync("saveAsFile", "screenshot.png", "image/png", imageBytes);
+        await JS.InvokeVoidAsync("DownloadImage");
     }
     
     protected override async Task OnInitializedAsync()
     {
         await GetFoldersInWwwRoot("Enten");
+        await SwitchPicture();
     }
 
-    public async Task ChangeImage(string newImage, Duckpart folder)
-    {
-        folder.currentPicture = newImage;
-        await InvokeAsync(StateHasChanged);
-    }
-    
     private async Task CreateNewFolder()
     {
         if(folders.Any(x => x.Contains(newFolderName)))

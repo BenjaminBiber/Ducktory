@@ -1,308 +1,324 @@
 {
   "Files": [
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\00000.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\01_bkg\\00000.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\1_labomba.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\1_labomba.png",
       "PackagePath": "staticwebassets\\Enten\\01_bkg\\1_labomba.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\1_smokeyfire.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\1_smokeyfire.png",
       "PackagePath": "staticwebassets\\Enten\\01_bkg\\1_smokeyfire.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\00000.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\space.png",
+      "PackagePath": "staticwebassets\\Enten\\01_bkg\\space.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\02_body\\00000.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\1_skeleton.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\1_skeleton.png",
       "PackagePath": "staticwebassets\\Enten\\02_body\\1_skeleton.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\03_feet\\00000.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\03_feet\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\03_feet\\00000.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\03_feet\\1_shoe.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\03_feet\\1_shoe.png",
       "PackagePath": "staticwebassets\\Enten\\03_feet\\1_shoe.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\00000.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\04_mouth\\00000.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\cigarette.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\cigarette.png",
       "PackagePath": "staticwebassets\\Enten\\04_mouth\\cigarette.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\00000.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\05_eyes\\00000.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\1_irritated.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\1_irritated.png",
       "PackagePath": "staticwebassets\\Enten\\05_eyes\\1_irritated.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\1_sleepy.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\1_sleepy.png",
       "PackagePath": "staticwebassets\\Enten\\05_eyes\\1_sleepy.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\L8,R1,C1,Ebene 8,visible,Normal,255.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\L8,R1,C1,Ebene 8,visible,Normal,255.png",
       "PackagePath": "staticwebassets\\Enten\\05_eyes\\L8,R1,C1,Ebene 8,visible,Normal,255.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\00000.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\00000.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\L9,R1,C1,Ebene 9,visible,Normal,255.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\Ente.png",
+      "PackagePath": "staticwebassets\\Enten\\06_hats\\Ente.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\L9,R1,C1,Ebene 9,visible,Normal,255.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\L9,R1,C1,Ebene 9,visible,Normal,255.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\Zylinder.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\Zylinder.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\Zylinder.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\aluhut.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\aluhut.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\aluhut.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\cactus.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\cactus.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\cactus.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\flower.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\flower.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\flower.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_blackhair.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_blackhair.png",
       "PackagePath": "staticwebassets\\Enten\\07_Foreground\\1_blackhair.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_radioactive.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_radioactive.png",
       "PackagePath": "staticwebassets\\Enten\\07_Foreground\\1_radioactive.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_sauce.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_sauce.png",
       "PackagePath": "staticwebassets\\Enten\\07_Foreground\\1_sauce.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_zzz.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_zzz.png",
       "PackagePath": "staticwebassets\\Enten\\07_Foreground\\1_zzz.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\poop.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\poop.png",
       "PackagePath": "staticwebassets\\Enten\\07_Foreground\\poop.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\Thumbs.db",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\Thumbs.db",
       "PackagePath": "staticwebassets\\Enten\\Thumbs.db"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\images.yaml",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\images.yaml",
       "PackagePath": "staticwebassets\\images.yaml"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\index.html",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "U:\\Projects\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\pic.js",
+      "PackagePath": "staticwebassets\\pic.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\test.js",
+      "PackagePath": "staticwebassets\\test.js"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MeinBlazorProjekt.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

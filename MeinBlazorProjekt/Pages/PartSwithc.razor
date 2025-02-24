@@ -34,6 +34,12 @@
         justify-content: space-between;
         margin-bottom: 0.5em;
     }
+    
+    @@media (max-width: 678px) {
+        .part {
+            width: 3em;
+            }
+    }
 </style>
 @code {
     [Parameter] public Duckpart Duckpart { get; set; }

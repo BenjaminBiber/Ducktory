@@ -1,0 +1,171 @@
+﻿@page "/Test"
+@using System.Net
+@using Enten.Components.Classes
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@using YamlDotNet.Serialization
+@using YamlDotNet.Serialization.NamingConventions
+@inject IWebAssemblyHostEnvironment _env
+@inject HttpClient Http
+@using Microsoft.JSInterop
+@inject IJSRuntime JS
+
+<h3>Bild in Canvas rendern</h3>
+
+<!-- Canvas-Element -->
+
+<!-- Button zum Auslösen der Funktion -->
+<button @onclick="RenderImage">Bild rendern</button>
+
+@code {
+    private async Task RenderImage()
+    {
+        foreach (var item in FoldersWithPngFiles.Where(x => x.IsVisible).OrderBy(x => x.SortOrder))
+        {
+            string imageUrl = $"https://localhost:7235/{item.currentPicture}";
+            await JS.InvokeVoidAsync("drawImageToCanvas", imageUrl);
+        }
+    }
+}
+
+
+@code
+{
+public List<Duckpart> FoldersWithPngFiles { get; set; } = [];
+private string UploadMessage { get; set; }
+private string selectedElement = "";
+private string newFolderName = "";
+private List<string> folders = [];
+private List<string> imageUrls;
+private IBrowserFile? uploadedFile;
+private string? fileContentBase64;
+private string fileName = "";
+public string error = "";
+
+protected override async Task OnInitializedAsync()
+{
+await GetFoldersInWwwRoot("Enten");
+}
+
+private async Task CreateNewFolder()
+{
+if(folders.Any(x => x.Contains(newFolderName)))
+{
+UploadMessage = "Ordner existiert bereits!";
+return;
+}
+folders.Add(newFolderName);
+newFolderName = string.Empty;
+}
+
+public async Task GetFoldersInWwwRoot(string subDirectory = "")
+{
+string path = Path.Combine(_env.Environment, subDirectory);
+
+var structure = await LoadYamlAsync();
+if(structure == null)
+{
+return;
+}
+folders = structure.Enten.Keys.ToList();
+
+GetPngFilesInFolders(structure);
+}
+
+public void GetPngFilesInFolders(EnteModel duck)
+{
+FoldersWithPngFiles.Clear();
+int counter = 0;
+foreach (var folder in duck.Enten)
+{
+var item = new Duckpart(){Folder = folder.Key, Pictures = folder.Value, currentPicture = GetCurrentPicture(folder.Value), SortOrder = counter, IsVisible = getVisisbility(folder.Value)};
+FoldersWithPngFiles.Add(item);
+counter++;
+}
+}
+
+private bool getVisisbility(List<string> pictures)
+{
+return pictures.Any(x => x.Contains("00000"));
+}
+
+private string GetCurrentPicture(List<string> pictures)
+{
+return pictures.Any(x => x.Contains("00000")) ? pictures.FirstOrDefault(x => x.Contains("00000")) : pictures.FirstOrDefault();
+}
+
+public async Task<EnteModel?> LoadYamlAsync()
+{
+try
+{
+// Lade die YAML-Datei aus wwwroot
+var yamlText = await Http.GetStringAsync("images.yaml");
+
+var deserializer = new DeserializerBuilder()
+.WithNamingConvention(NullNamingConvention.Instance)
+.Build();
+
+return deserializer.Deserialize<EnteModel>(yamlText);
+}
+catch (Exception ex)
+{
+ShowError("Fehler beim Laden der YAML-Datei: " + ex.Message);
+return null;
+}
+}
+
+private async Task HandleFileSelected(InputFileChangeEventArgs e)
+{
+uploadedFile = e.File;
+fileName = uploadedFile.Name;
+
+using var memoryStream = new MemoryStream();
+await uploadedFile.OpenReadStream().CopyToAsync(memoryStream);
+fileContentBase64 = Convert.ToBase64String(memoryStream.ToArray());
+}
+
+private async Task UploadToGitHub()
+{
+if (string.IsNullOrEmpty(fileContentBase64)) return;
+
+var githubToken = "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"; // 🔥 In Produktionsumgebungen sicher speichern!
+var repoOwner = "benjaminbiber";
+var repoName = "ducktory";
+var branch = "main";
+var filePathInRepo = $"MeinBlazorProjekt/wwwroot/Enten/{selectedElement}/{fileName}";
+
+var url = $"https://api.github.com/repos/{repoOwner}/{repoName}/contents/{filePathInRepo}";
+
+var content = new
+{
+message = $"Add {fileName}",
+content = fileContentBase64,
+branch
+};
+
+var request = new HttpRequestMessage(HttpMethod.Put, url)
+{
+Content = new StringContent(System.Text.Json.JsonSerializer.Serialize(content), System.Text.Encoding.UTF8, "application/json")
+};
+
+request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", githubToken);
+request.Headers.UserAgent.ParseAdd("BlazorApp");
+
+var response = await Http.SendAsync(request);
+
+if (response.IsSuccessStatusCode)
+{
+Console.WriteLine($"Datei {fileName} erfolgreich hochgeladen!");
+}
+else
+{
+ShowError($"Fehler: {response.StatusCode}");
+}
+}
+
+private async Task ShowError(string _error)
+{
+error = _error;
+Thread.Sleep(5000);
+error = "";
+}
+}

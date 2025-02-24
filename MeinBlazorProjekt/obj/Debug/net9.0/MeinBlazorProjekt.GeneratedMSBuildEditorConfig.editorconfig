@@ -13,37 +13,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = MeinBlazorProjekt
 build_property.RootNamespace = MeinBlazorProjekt
-build_property.ProjectDir = U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt\
+build_property.ProjectDir = C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = U:\Projects\RiderProjects\Ducktory\MeinBlazorProjekt
+build_property.MSBuildProjectDirectory = C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[U:/Projects/RiderProjects/Ducktory/MeinBlazorProjekt/App.razor]
+[C:/Users/User/RiderProjects/Ducktory/MeinBlazorProjekt/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[U:/Projects/RiderProjects/Ducktory/MeinBlazorProjekt/Layout/MainLayout.razor]
+[C:/Users/User/RiderProjects/Ducktory/MeinBlazorProjekt/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[U:/Projects/RiderProjects/Ducktory/MeinBlazorProjekt/Pages/Home.razor]
+[C:/Users/User/RiderProjects/Ducktory/MeinBlazorProjekt/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[U:/Projects/RiderProjects/Ducktory/MeinBlazorProjekt/Pages/PartSwithc.razor]
+[C:/Users/User/RiderProjects/Ducktory/MeinBlazorProjekt/Pages/PartSwithc.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydFN3aXRoYy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[U:/Projects/RiderProjects/Ducktory/MeinBlazorProjekt/Pages/Test.razor]
+[C:/Users/User/RiderProjects/Ducktory/MeinBlazorProjekt/Pages/Test.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[U:/Projects/RiderProjects/Ducktory/MeinBlazorProjekt/_Imports.razor]
+[C:/Users/User/RiderProjects/Ducktory/MeinBlazorProjekt/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
