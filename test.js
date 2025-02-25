@@ -5,7 +5,19 @@
     }
 
     const canvas = document.getElementById('myCanvas');
+    if (!canvas) {
+        console.error("Canvas mit ID 'myCanvas' nicht gefunden.");
+        return;
+    }
+
     const ctx = canvas.getContext('2d');
+    if (!ctx) {
+        console.error("Fehler: getContext('2d') gibt null zurück.");
+        return;
+    }
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     let loadedCount = 0;
     const images = [];
 
@@ -19,6 +31,7 @@
             if (index === 0) {
                 canvas.width = img.width;
                 canvas.height = img.height;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
             }
 
             if (loadedCount === imageUrls.length) {
