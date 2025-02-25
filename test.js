@@ -73,3 +73,22 @@ window.DownloadImage = () => {
 
     document.body.removeChild(link);
 };
+
+window.CopyCanvasToClipboard = async () => {
+    const canvas = document.getElementById("myCanvas");
+    if (!canvas) {
+        console.error("Canvas mit ID 'myCanvas' nicht gefunden.");
+        return;
+    }
+
+    canvas.toBlob(async (blob) => {
+        try {
+            const item = new ClipboardItem({ "image/png": blob });
+            await navigator.clipboard.write([item]);
+            console.log("Canvas-Bild wurde in die Zwischenablage kopiert!");
+        } catch (err) {
+            console.error("Fehler beim Kopieren in die Zwischenablage:", err);
+        }
+    }, "image/png");
+};
+
