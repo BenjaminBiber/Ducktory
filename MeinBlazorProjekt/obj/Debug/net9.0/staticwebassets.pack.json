@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\Enten\\02_body\\1_skeleton.png"
     },
     {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\dino.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\dino.png"
+    },
+    {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\03_feet\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\03_feet\\00000.png"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\cigarette.png",
       "PackagePath": "staticwebassets\\Enten\\04_mouth\\cigarette.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\sad.png",
+      "PackagePath": "staticwebassets\\Enten\\04_mouth\\sad.png"
     },
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\00000.png",
@@ -87,6 +95,10 @@
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\flower.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\flower.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\magic.png",
+      "PackagePath": "staticwebassets\\Enten\\06_hats\\magic.png"
     },
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_blackhair.png",
