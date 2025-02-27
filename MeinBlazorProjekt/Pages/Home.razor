@@ -35,6 +35,7 @@
                 <p style="color: red;">@error</p>
                 <button @onclick="GetPicture">📥 Bild herunterladen</button>
                 <button @onclick="CopyPicture" id="CopyButton">📥 Bild kopieren</button>
+                <button @onclick="RandomizeDuck">Randomize</button>
                 <div class="upload" id="upload">
                     <div class="input_Div">
                         <label for="select">Ordner auswählen</label>
@@ -199,7 +200,18 @@
         folders.Add(newFolderName);
         newFolderName = string.Empty;
     }
-    
+
+    private async Task RandomizeDuck()
+    {
+        var rnd = new Random();
+        foreach (var item in FoldersWithPngFiles)
+        {
+            item.currentPicture = item.Pictures[rnd.Next(item.Pictures.Count)];
+        }
+
+        await SwitchPicture();
+    }
+
     public async Task GetFoldersInWwwRoot(string subDirectory = "")
     {
         string path = Path.Combine(_env.Environment, subDirectory);
