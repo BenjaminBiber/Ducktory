@@ -32,10 +32,9 @@
         @if (true)
         {
             <div style="display: flex; flex-direction: column; justify-content: center; gap: 1em; margin-top: 2em;">
-                <label for="upload" style="text-align: center; font-weight: 800; font-size: 1.5em;">Bild Hochladen (.png)</label>
                 <p style="color: red;">@error</p>
                 <button @onclick="GetPicture">📥 Bild herunterladen</button>
-                <button @onclick="CopyPicture">📥 Bild kopieren</button>
+                <button @onclick="CopyPicture" id="CopyButton">📥 Bild kopieren</button>
                 <div class="upload" id="upload">
                     <div class="input_Div">
                         <label for="select">Ordner auswählen</label>
@@ -72,6 +71,10 @@
         justify-content: space-evenly;
         flex-direction: row;
         gap: 2.5em;
+    }
+    
+    #upload {
+        display: none;
     }
     
     .input_Div,.Upload_div{
@@ -115,6 +118,10 @@
     
     @@media (max-width: 678px)
     {
+        #CopyButton {
+            display: none;
+        }
+        
         #page {
             flex-direction: column;
         }

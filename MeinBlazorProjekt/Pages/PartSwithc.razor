@@ -10,7 +10,7 @@
     <button class="part btn" disabled="@(Duckpart.Pictures.Count < 1)" @onclick="@(() => onButtonPress(false))">@("<")</button>
     
     <p class="part">@getFoldername(@Duckpart.Folder)</p>
-    <button class="part btn" disabled="@(Duckpart.Pictures.Count < 1)" @onclick="@(() => onButtonPress(false))">@(">")</button>
+    <button class="part btn" disabled="@(Duckpart.Pictures.Count < 1)" @onclick="@(() => onButtonPress(true))">@(">")</button>
 
     
 </div>

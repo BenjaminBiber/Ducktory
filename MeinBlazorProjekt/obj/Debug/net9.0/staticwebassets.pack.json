@@ -29,8 +29,40 @@
       "PackagePath": "staticwebassets\\Enten\\02_body\\1_skeleton.png"
     },
     {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\Lebakas.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\Lebakas.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\beer.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\beer.png"
+    },
+    {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\dino.png",
       "PackagePath": "staticwebassets\\Enten\\02_body\\dino.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\ghost.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\ghost.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\gun.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\gun.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\knife.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\knife.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\mexican.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\mexican.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\rubber.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\rubber.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\02_body\\sakko.png",
+      "PackagePath": "staticwebassets\\Enten\\02_body\\sakko.png"
     },
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\03_feet\\00000.png",
@@ -49,8 +81,16 @@
       "PackagePath": "staticwebassets\\Enten\\04_mouth\\cigarette.png"
     },
     {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\mmmhm.png",
+      "PackagePath": "staticwebassets\\Enten\\04_mouth\\mmmhm.png"
+    },
+    {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\sad.png",
       "PackagePath": "staticwebassets\\Enten\\04_mouth\\sad.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\04_mouth\\vape.png",
+      "PackagePath": "staticwebassets\\Enten\\04_mouth\\vape.png"
     },
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\00000.png",
@@ -67,6 +107,10 @@
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\L8,R1,C1,Ebene 8,visible,Normal,255.png",
       "PackagePath": "staticwebassets\\Enten\\05_eyes\\L8,R1,C1,Ebene 8,visible,Normal,255.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\05_eyes\\dead.png",
+      "PackagePath": "staticwebassets\\Enten\\05_eyes\\dead.png"
     },
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\00000.png",
@@ -99,6 +143,18 @@
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\magic.png",
       "PackagePath": "staticwebassets\\Enten\\06_hats\\magic.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\mexican.png",
+      "PackagePath": "staticwebassets\\Enten\\06_hats\\mexican.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\party.png",
+      "PackagePath": "staticwebassets\\Enten\\06_hats\\party.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\06_hats\\topf.png",
+      "PackagePath": "staticwebassets\\Enten\\06_hats\\topf.png"
     },
     {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\07_Foreground\\1_blackhair.png",
