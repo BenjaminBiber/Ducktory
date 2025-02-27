@@ -3,6 +3,7 @@ Enten:
   - Enten/01_bkg/00000.png
   - Enten/01_bkg/1_labomba.png
   - Enten/01_bkg/1_smokeyfire.png
+  - Enten/01_bkg/rauschen.png
   - Enten/01_bkg/space.png
   02_body:
   - Enten/02_body/00000.png
@@ -14,8 +15,10 @@ Enten:
   - Enten/02_body/gun.png
   - Enten/02_body/knife.png
   - Enten/02_body/mexican.png
+  - Enten/02_body/pixel.png
   - Enten/02_body/rubber.png
   - Enten/02_body/sakko.png
+  - Enten/02_body/verzerrt.png
   03_feet:
   - Enten/03_feet/00000.png
   - Enten/03_feet/1_shoe.png
