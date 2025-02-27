@@ -1896,7 +1896,6 @@ C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\webcil\M
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\scopedcss\bundle\MeinBlazorProjekt.styles.css
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\blazor.build.boot-extension.json
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\blazor.boot.json
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\uo8s7ofyec-xd83rnx73q.gz
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\zv8dmve3qm-bqjiyaj88i.gz
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\kl6m0o33r9-c2jlpeoesf.gz
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\vip1zbwyb3-erw9l3u2r3.gz
@@ -2161,10 +2160,11 @@ C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\MeinBlaz
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\ref\MeinBlazorProjekt.dll
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\qi9m7vqdmw-4lntjrr9ol.gz
 C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\qi4eqe7tm4-buedcqjrmt.gz
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.gyuwh9hgno.pdb
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.h6hjryl1h1.wasm
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.gyuwh9hgno.pdb.gz
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.h6hjryl1h1.wasm.gz
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\pae27vm3ue-h6hjryl1h1.gz
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\p9jpivzlcm-gyuwh9hgno.gz
-C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\a6dc2c1dhn-of2c0yy7xg.gz
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\uo8s7ofyec-r2135ohvx7.gz
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.ltlbtgwtyr.pdb
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.h0z128xied.wasm
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.ltlbtgwtyr.pdb.gz
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\bin\Debug\net9.0\wwwroot\_framework\MeinBlazorProjekt.h0z128xied.wasm.gz
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\pae27vm3ue-h0z128xied.gz
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\p9jpivzlcm-ltlbtgwtyr.gz
+C:\Users\User\RiderProjects\Ducktory\MeinBlazorProjekt\obj\Debug\net9.0\compressed\a6dc2c1dhn-m1dwo2jcbz.gz

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
+      "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\BKG.png",
+      "PackagePath": "staticwebassets\\BKG.png"
+    },
+    {
       "Id": "C:\\Users\\User\\RiderProjects\\Ducktory\\MeinBlazorProjekt\\wwwroot\\Enten\\01_bkg\\00000.png",
       "PackagePath": "staticwebassets\\Enten\\01_bkg\\00000.png"
     },
