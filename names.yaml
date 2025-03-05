@@ -2,7 +2,7 @@ https://benjaminbiber.github.io/Ducktory/Enten/01_bkg/Bild.png:
   Index:
     4
   Text:
-    "am Bahnhof"
+    "am Bahnhof Straß"
   Standalone:
     false
 
@@ -34,9 +34,16 @@ https://benjaminbiber.github.io/Ducktory/Enten/06_hats/topf.png:
   Index:
     2
   Text:
-    "mit Topf"
+    "mit Topf als Hut"
   Standalone:
     false
 
+https://benjaminbiber.github.io/Ducktory/Enten/02_body/ghost.png:
+  Index:
+    2
+  Text:
+    "GeisterEnté"
+  Standalone:
+    false
 
 
