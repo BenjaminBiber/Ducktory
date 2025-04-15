@@ -36,11 +36,6 @@
 
             if (loadedCount === imageUrls.length) {
                 images.forEach(image => {
-                    // Zufälligen Filter auswählen
-                    const filters = ["invert(100%)", "hue-rotate(180)", "sepia(50%)", "none", "none", "none", "none", "none", "none"];
-                    const randomFilter = filters[Math.floor(Math.random() * filters.length)];
-
-                    ctx.filter = randomFilter === "none" ? "none" : randomFilter;
                     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                 });
             }
