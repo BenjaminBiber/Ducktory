@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GtKY+3O6Q1g=",
+  "dgSpecHash": "MBdUK9BiNa0=",
   "success": true,
-  "projectFilePath": "U:\\Projects\\RiderProjects\\Ducktory\\Ducktory\\DuckLibrary\\DuckLibrary.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/DuckLibrary.csproj",
+  "expectedPackageFiles": [
+    "/home/benjaminb/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

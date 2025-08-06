@@ -1,4 +1,6 @@
 ﻿@page "/"
+@using DuckLibrary.Models
+@using Ducktory.Components.Components
 @inject IJSRuntime Js
 
 <PageTitle>Enten-Konfigurator</PageTitle>
@@ -10,13 +12,23 @@
     </div>
     
     @*Controls*@
-    <div class="col-lg-6 col-12">
-        
+    <div class="col-lg-6 col-12 pa-3">
+        <DuckPartControl IsLegend="true"></DuckPartControl>
+        @for (int i = 0; i < DuckParts.Count; i++)
+        {
+            <DuckPartControl @bind-Value="DuckParts[i]" />
+        }
     </div>
 </div>
 
 @code {
     
+    private List<DuckPart> DuckParts { get; set; } = new List<DuckPart>();
+
+    protected override async Task OnInitializedAsync()
+    {
+    }
+
     private async Task CopyPicture()
     {
         await Js.InvokeVoidAsync("CopyCanvasToClipboard");
@@ -26,5 +38,4 @@
     {
         await Js.InvokeVoidAsync("DownloadImage");
     }
-    
 }

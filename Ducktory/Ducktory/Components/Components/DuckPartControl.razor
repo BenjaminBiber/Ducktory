@@ -1,14 +1,91 @@
 ﻿@using DuckLibrary.Models
 
-@if (DuckPart == new DuckPart())
-{
-    
-}
-else
-{
-    
-}
+<div class="row g-0">
+    <div class="col-2">
+        @if (IsLegend)
+        {
+            <MudText>Sortierreihenfolge</MudText>
+        }
+        else
+        {
+            <MudNumericField Min="0" T="int" Value="Value.SortOrder" ValueChanged="(int value) => SortOrderChanged(value)" Immediate="true"/>
+        }
+    </div>
+    <div class="col-2">
+        @if (IsLegend)
+        {
+            <MudText>Ist Sichtbar</MudText>
+        }
+        else
+        {
+            <MudSwitch T="bool" Value="Value.IsVisible" ValueChanged="(bool value) => VisibilityChanged(value)"/>
+        }
+    </div>
+    <div class="col-2">
+        @if (!IsLegend)
+        {
+            <MudIconButton Icon="@Icons.Material.Filled.ArrowLeft" Variant="Variant.Text" Color="Color.Primary" OnClick="LeftButtonClick"></MudIconButton>
+        }
+    </div>
+    <div class="col-4">
+        @if (IsLegend)
+        {
+            <MudText>Ebene</MudText>
+        }
+        else
+        {
+            <MudField Variant="Variant.Outlined">
+                @Value.FolderName
+            </MudField>
+        }
+        
+    </div>
+    <div class="col-2">
+        @if (!IsLegend)
+        {
+            <MudIconButton Icon="@Icons.Material.Filled.ArrowRight" Variant="Variant.Text" Color="Color.Primary" OnClick="RightButtonClick"></MudIconButton>
+        }
+    </div>
+</div>
 
 @code {
-    [Parameter] public DuckPart DuckPart { get; set; } = new DuckPart();
+    [Parameter] public bool IsLegend { get; set; }
+    
+    [Parameter] public DuckPart Value { get; set; } = new DuckPart();
+    [Parameter] public EventCallback<DuckPart> ValueChanged { get; set; }
+
+    private int CurrentPictureIndex => GetCurrentPictureIndex();
+    
+    private int GetCurrentPictureIndex()
+    {
+        return Value.Images.IndexOf(Value.CurrentPicture);
+    }
+        
+    private async Task RightButtonClick()
+    {
+        int nextIndex = (CurrentPictureIndex + 1) % Value.Images.Count;
+
+        Value.CurrentPicture = Value.Images[nextIndex];
+        await ValueChanged.InvokeAsync(Value);
+    }
+    
+    private async Task LeftButtonClick()
+    {
+        int nextIndex = (CurrentPictureIndex - 1 + Value.Images.Count) % Value.Images.Count;
+
+        Value.CurrentPicture = Value.Images[nextIndex];
+        await ValueChanged.InvokeAsync(Value);
+    }
+    
+    private async Task SortOrderChanged(int value)
+    {
+        Value.SortOrder = value;
+        await ValueChanged.InvokeAsync(Value);
+    }
+    
+    private async Task VisibilityChanged(bool value)
+    {
+        Value.IsVisible = value;
+        await ValueChanged.InvokeAsync(Value);
+    }
 }

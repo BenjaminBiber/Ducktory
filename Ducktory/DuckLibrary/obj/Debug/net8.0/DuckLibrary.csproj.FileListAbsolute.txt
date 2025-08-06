@@ -1,0 +1,12 @@
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/bin/Debug/net8.0/DuckLibrary.deps.json
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/bin/Debug/net8.0/DuckLibrary.dll
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/bin/Debug/net8.0/DuckLibrary.pdb
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/DuckLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/DuckLibrary.AssemblyInfoInputs.cache
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/DuckLibrary.AssemblyInfo.cs
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/DuckLibrary.csproj.CoreCompileInputs.cache
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/DuckLibrary.sourcelink.json
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/DuckLibrary.dll
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/refint/DuckLibrary.dll
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/DuckLibrary.pdb
+/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/obj/Debug/net8.0/ref/DuckLibrary.dll
