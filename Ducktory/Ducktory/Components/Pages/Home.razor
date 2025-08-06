@@ -1,0 +1,30 @@
+﻿@page "/"
+@inject IJSRuntime Js
+
+<PageTitle>Enten-Konfigurator</PageTitle>
+
+<div class="row main-container">
+    @*Canvas*@
+    <div class="col-lg-6 col-12">
+        <canvas class="w-100 h-100" id="myCanvas"></canvas>
+    </div>
+    
+    @*Controls*@
+    <div class="col-lg-6 col-12">
+        
+    </div>
+</div>
+
+@code {
+    
+    private async Task CopyPicture()
+    {
+        await Js.InvokeVoidAsync("CopyCanvasToClipboard");
+    }
+    
+    private async Task GetPicture()
+    {
+        await Js.InvokeVoidAsync("DownloadImage");
+    }
+    
+}
