@@ -1,0 +1,48 @@
+# Manifest / backend.yml
+
+name: Enten Konfiugarator
+entities:
+  Album:
+    properties:
+      - { name: "Name", type: text, validation: { isNotEmpty: true } }
+      - { name: "Ist Sichtbar?", type: boolean }
+      - { name: SortierIndex, type: number }
+
+    belongsToMany:
+      - { name: Enten-Bild, entity: EntenBild, eager: true, helpText: "Bilder für dieses Album" }
+
+    policies:
+      create:
+        - { access: admin }
+      read:
+        - { access: public }
+      update:
+        - { access: admin }
+
+  EntenBild:
+    properties:
+      - {
+          name: Bild,
+          type: file,
+          options:
+          {
+            sizes: {
+              small: { width: 90, height: 90 },
+              large: { width: 200 },
+              original: {}
+            }
+          }
+        }
+      - { name: Name, type: text }
+      - { name: "Ist Default?", type: boolean }
+
+    belongsTo:
+      - { name: Album, entity: Album, helpText: "Album zu dem dieses Bild gehört" }
+
+    policies:
+      create:
+        - { access: admin }
+      read:
+        - { access: public }
+      update:
+        - { access: admin }
