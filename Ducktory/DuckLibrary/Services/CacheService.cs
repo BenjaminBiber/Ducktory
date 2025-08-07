@@ -7,7 +7,7 @@ public class CacheService
 {
     private readonly ConcurrentDictionary<string, CacheItem<object>> _cache = new();
 
-    public async Task<T> GetOrAddAsync<T>(string key, Func<Task<T>> dataFactory)
+    public async Task<T> GetOrAddAsync<T, TMapping>(string key, Func<Task<T>> dataFactory)
     {
         var now = DateTime.UtcNow;
 
@@ -28,7 +28,10 @@ public class CacheService
             LastWrite = now
         };
 
-        _cache[key] = newItem;
+        if (newItem != null)
+        {
+            _cache[key] = newItem;
+        }
 
         return newData;
     }

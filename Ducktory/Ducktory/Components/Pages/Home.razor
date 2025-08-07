@@ -1,7 +1,11 @@
 ﻿@page "/"
+@using AutoMapper
+@using DuckLibrary.MappingModels
 @using DuckLibrary.Models
+@using DuckLibrary.Services
 @using Ducktory.Components.Components
 @inject IJSRuntime Js
+@inject CmsService Cms
 
 <PageTitle>Enten-Konfigurator</PageTitle>
 
@@ -27,6 +31,7 @@
 
     protected override async Task OnInitializedAsync()
     {
+        var test = await Cms.GetItems<List<DuckPart>, DuckPartDto>("DuckParts", "/collections/albums");
     }
 
     private async Task CopyPicture()

@@ -1,3 +1,6 @@
+using AutoMapper;
+using DuckLibrary;
+using DuckLibrary.Services;
 using Ducktory.Components;
 using MudBlazor.Services;
 
@@ -5,13 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMudServices();
 
-// Add services to the container.
+builder.Services.AddAutoMapper(typeof(InitilizeMappings).Assembly);
+builder.Services.AddSingleton<HttpClient>();
+builder.Services.AddSingleton<CacheService>();
+builder.Services.AddSingleton<CmsService>();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
