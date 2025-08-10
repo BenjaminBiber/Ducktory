@@ -9,7 +9,7 @@ public class CmsService
 {
     private readonly CacheService _cacheService;
     private readonly HttpClient _httpClient;
-    private readonly string _cmsUrl = (Environment.GetEnvironmentVariable("CMSUrl") ?? "http://localhost:1111") + "/api";
+    private readonly string _cmsUrl = (Environment.GetEnvironmentVariable("CMSUrl") ?? "https://rezepte.benjaminbiber.de") + "/api";
     private readonly IMapper _mapper;
 
     public CmsService(CacheService cacheService, HttpClient httpClient, IMapper mapper)

@@ -4,7 +4,29 @@ public class DuckPart
 {
     public List<DuckPartImage> Images { get; set; }
     public string Folder { get; set; }
-    public DuckPartImage CurrentPicture { get; set; }
+
+    private DuckPartImage _currentPicture;
+
+    public DuckPartImage CurrentPicture
+    {
+        get
+        {
+            if (String.IsNullOrEmpty(_currentPicture.Bild.Original) && (Images != null || Images.Any()))
+            {
+                _currentPicture.Bild = (Images.FirstOrDefault() ?? new DuckPartImage()).Bild;
+                return _currentPicture;
+            }
+            else
+            {
+                return _currentPicture;
+            }
+        }
+        set
+        {
+            _currentPicture = value;
+        }
+    }
+
     public string Name { get; set; }
     public bool IsVisible { get; set; } = true;
     public int SortOrder { get; set; }

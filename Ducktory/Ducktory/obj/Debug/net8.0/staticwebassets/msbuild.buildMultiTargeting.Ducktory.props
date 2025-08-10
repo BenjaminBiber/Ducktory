@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\Ducktory.props" />
+  <Import Project="../build/Ducktory.props" />
 </Project>

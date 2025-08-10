@@ -11,29 +11,49 @@
 
 <div class="row main-container">
     @*Canvas*@
-    <div class="col-lg-6 col-12">
-        <canvas class="w-100 h-100" id="myCanvas"></canvas>
+    <div class="col-lg-6 col-12 position-relative d-flex align-items-center justify-content-center">
+        <MudPaper Class="w-75 ma-5 pa-4 ma-5 rounded" Elevation="2">
+            <canvas class="w-100 h-100 rounded" id="myCanvas"></canvas>
+        </MudPaper>
     </div>
     
     @*Controls*@
-    <div class="col-lg-6 col-12 pa-3">
-        <DuckPartControl IsLegend="true"></DuckPartControl>
-        @for (int i = 0; i < DuckParts.Count; i++)
-        {
-            <DuckPartControl @bind-Value="DuckParts[i]" />
-        }
+    <div class="col-lg-6 col-12 pa-3 d-flex align-items-center justify-content-center">
+        <MudPaper Class="w-100 ma-5 pa-5 ma-5 rounded" Elevation="2">
+            @for (int i = 0; i < DuckParts.Count; i++)
+            {
+                var index = i;
+                <DuckPartControl
+                    Value="DuckParts[index]"
+                    ValueChanged="value => DuckParts[index] = value"/>
+            }
+        </MudPaper>
     </div>
 </div>
 
 @code {
     
     private List<DuckPart> DuckParts { get; set; } = new List<DuckPart>();
-
+    private List<string> CanvasImages => DuckParts.Where(x => x.IsVisible && !String.IsNullOrEmpty(x.CurrentPicture.Bild.Original)).OrderBy(x => x.SortOrder).Select(x => x.CurrentPicture.Bild.Original).ToList();
+    
     protected override async Task OnInitializedAsync()
     {
-        var test = await Cms.GetItems<List<DuckPart>, DuckPartDto>("DuckParts", "/collections/albums");
+        DuckParts = await Cms.GetItems<List<DuckPart>, DuckPartDto>("DuckParts", "/collections/albums");
     }
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await SwitchPicture();
+    }
+
+    private async Task SwitchPicture()
+    {
+        if(CanvasImages.Any())
+        {
+            await Js.InvokeVoidAsync("renderImagesOnCanvas", (object)CanvasImages);
+        }
+    }
+    
     private async Task CopyPicture()
     {
         await Js.InvokeVoidAsync("CopyCanvasToClipboard");

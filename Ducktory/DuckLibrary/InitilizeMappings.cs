@@ -17,10 +17,12 @@ public class InitilizeMappings : Profile
             .ReverseMap();
         
         CreateMap<DuckPartImage, DuckPartImageDto>()
-            .ForMember(dest => dest.Bild, opt => opt.MapFrom(src => src.Url))
+            .ForMember(dest => dest.Bild, opt => opt.MapFrom(src => src.Bild))
             .ForMember(dest => dest.IstDefault, opt => opt.MapFrom(src => src.IsDefault))
             .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
             .ReverseMap();
-        
+
+        CreateMap<ImageDto, Image>().ReverseMap();
+
     }
 }

@@ -1183,32 +1183,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\benjamin.biber\\.nuget\\packages\\": {}
+    "/home/benjaminb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\Projects\\RiderProjects\\Ducktory\\Ducktory\\Ducktory\\Ducktory.csproj",
+      "projectUniqueName": "/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Ducktory.csproj",
       "projectName": "Ducktory",
-      "projectPath": "U:\\Projects\\RiderProjects\\Ducktory\\Ducktory\\Ducktory\\Ducktory.csproj",
-      "packagesPath": "C:\\Users\\benjamin.biber\\.nuget\\packages\\",
-      "outputPath": "U:\\Projects\\RiderProjects\\Ducktory\\Ducktory\\Ducktory\\obj\\",
+      "projectPath": "/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Ducktory.csproj",
+      "packagesPath": "/home/benjaminb/.nuget/packages/",
+      "outputPath": "/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\benjamin.biber\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/benjaminb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "U:\\Projects\\RiderProjects\\Ducktory\\Ducktory\\DuckLibrary\\DuckLibrary.csproj": {
-              "projectPath": "U:\\Projects\\RiderProjects\\Ducktory\\Ducktory\\DuckLibrary\\DuckLibrary.csproj"
+            "/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/DuckLibrary.csproj": {
+              "projectPath": "/home/benjaminb/RiderProjects/Ducktory/Ducktory/DuckLibrary/DuckLibrary.csproj"
             }
           }
         }
@@ -1248,6 +1249,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.14, 8.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1256,7 +1263,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,7 +1,13 @@
 ﻿@using DuckLibrary.Models
 
-<div class="row g-0">
-    <div class="col-2">
+<div class="row g-0 mb-2">
+    <div class="col-2 d-flex align-items-center justify-content-center">
+        @if (!IsLegend)
+        {
+            <img class="w-50 h-75 mr-2" src="@Value.CurrentPicture.Bild.Original" alt="@Value.CurrentPicture.Name"/>
+        }
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-center">
         @if (IsLegend)
         {
             <MudText>Sortierreihenfolge</MudText>
@@ -11,39 +17,39 @@
             <MudNumericField Min="0" T="int" Value="Value.SortOrder" ValueChanged="(int value) => SortOrderChanged(value)" Immediate="true"/>
         }
     </div>
-    <div class="col-2">
-        @if (IsLegend)
-        {
-            <MudText>Ist Sichtbar</MudText>
-        }
-        else
-        {
-            <MudSwitch T="bool" Value="Value.IsVisible" ValueChanged="(bool value) => VisibilityChanged(value)"/>
-        }
-    </div>
-    <div class="col-2">
+    <div class="col-1 d-flex align-items-center justify-content-end">
         @if (!IsLegend)
         {
-            <MudIconButton Icon="@Icons.Material.Filled.ArrowLeft" Variant="Variant.Text" Color="Color.Primary" OnClick="LeftButtonClick"></MudIconButton>
+            <MudIconButton Disabled="DisableButtons" Icon="@Icons.Material.Filled.ArrowLeft" Variant="Variant.Text" Size="Size.Large" Color="Color.Primary" OnClick="LeftButtonClick"></MudIconButton>
         }
     </div>
-    <div class="col-4">
+    <div class="col-4 d-flex align-items-center justify-content-center">
         @if (IsLegend)
         {
             <MudText>Ebene</MudText>
         }
         else
         {
-            <MudField Variant="Variant.Outlined">
+            <MudText Class="fw-bold">
                 @Value.Name
-            </MudField>
+            </MudText>
         }
-        
+
     </div>
-    <div class="col-2">
+    <div class="col-1 d-flex align-items-center justify-content-start">
         @if (!IsLegend)
         {
-            <MudIconButton Icon="@Icons.Material.Filled.ArrowRight" Variant="Variant.Text" Color="Color.Primary" OnClick="RightButtonClick"></MudIconButton>
+            <MudIconButton Disabled="DisableButtons" Icon="@Icons.Material.Filled.ArrowRight" Size="Size.Large" Variant="Variant.Text" Color="Color.Primary" OnClick="RightButtonClick"></MudIconButton>
+        }
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-center">
+        @if (IsLegend)
+        {
+            <MudText>Ist Sichtbar</MudText>
+        }
+        else
+        {
+            <MudToggleIconButton Icon="@Icons.Material.Filled.VisibilityOff" Size="Size.Large" Color="Color.Default" ToggledChanged="(bool value) => VisibilityChanged(value)" ToggledIcon="@Icons.Material.Filled.Visibility" Toggled="Value.IsVisible"></MudToggleIconButton>
         }
     </div>
 </div>
@@ -55,6 +61,7 @@
     [Parameter] public EventCallback<DuckPart> ValueChanged { get; set; }
 
     private int CurrentPictureIndex => GetCurrentPictureIndex();
+    private bool DisableButtons => Value.Images.Count < 2;
     
     private int GetCurrentPictureIndex()
     {

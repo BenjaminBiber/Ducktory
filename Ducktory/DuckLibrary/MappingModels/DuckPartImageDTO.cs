@@ -7,7 +7,7 @@ public class DuckPartImageDto
     public Guid Id { get; set; }
 
     [JsonPropertyName("Bild")]
-    public string Bild { get; set; }
+    public ImageDto Bild { get; set; }
 
     [JsonPropertyName("Name")]
     public string Name { get; set; }

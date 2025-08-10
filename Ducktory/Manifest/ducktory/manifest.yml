@@ -1,12 +1,12 @@
 # Manifest / backend.yml
 
-name: Enten Konfiugarator
+name: Enten Konfigurator
 entities:
   Album:
     properties:
       - { name: "Name", type: text, validation: { isNotEmpty: true } }
-      - { name: "Ist Sichtbar?", type: boolean }
-      - { name: SortierIndex, type: number }
+      - { name: "Ist-Sichtbar", type: boolean }
+      - { name: Sortier-Index, type: number }
 
     belongsToMany:
       - { name: Enten-Bild, entity: EntenBild, eager: true, helpText: "Bilder für dieses Album" }
@@ -23,7 +23,7 @@ entities:
     properties:
       - {
           name: Bild,
-          type: file,
+          type: image,
           options:
           {
             sizes: {
@@ -34,7 +34,7 @@ entities:
           }
         }
       - { name: Name, type: text }
-      - { name: "Ist Default?", type: boolean }
+      - { name: "Ist-Default", type: boolean }
 
     belongsTo:
       - { name: Album, entity: Album, helpText: "Album zu dem dieses Bild gehört" }

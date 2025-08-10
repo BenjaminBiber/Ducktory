@@ -5,6 +5,7 @@ namespace DuckLibrary.Services;
 
 public class CacheService
 {
+    private readonly int _cacheDurationInHours = (System.Diagnostics.Debugger.IsAttached ? 0 : 1);
     private readonly ConcurrentDictionary<string, CacheItem<object>> _cache = new();
 
     public async Task<T> GetOrAddAsync<T, TMapping>(string key, Func<Task<T>> dataFactory)
@@ -13,7 +14,7 @@ public class CacheService
 
         if (_cache.TryGetValue(key, out var existingItem))
         {
-            if (existingItem.LastWrite.AddHours(1) > now)
+            if (existingItem.LastWrite.AddHours(_cacheDurationInHours) > now)
             {
                 // Cache gültig
                 return (T)existingItem.Data;
