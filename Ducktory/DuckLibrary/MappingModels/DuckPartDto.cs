@@ -10,10 +10,10 @@ public class DuckPartDto
     [JsonPropertyName("Name")]
     public string Name { get; set; }
 
-    [JsonPropertyName("Ist Sichtbar")]
+    [JsonPropertyName("Ist-Sichtbar")]
     public bool IstSichtbar { get; set; }
 
-    [JsonPropertyName("SortierIndex")]
+    [JsonPropertyName("Sortier-Index")]
     public int SortierIndex { get; set; }
 
     [JsonPropertyName("enten-Bilds")]

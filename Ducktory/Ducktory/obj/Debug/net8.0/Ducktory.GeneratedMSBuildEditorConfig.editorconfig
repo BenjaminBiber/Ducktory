@@ -12,39 +12,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ducktory
 build_property.RootNamespace = Ducktory
-build_property.ProjectDir = /home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/
+build_property.ProjectDir = U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory
+build_property.MSBuildProjectDirectory = U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Components/DuckPartControl.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnRzL0R1Y2tQYXJ0Q29udHJvbC5yYXpvcg==
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Components/ActionControls.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXEFjdGlvbkNvbnRyb2xzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Components/DuckPartControl.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXER1Y2tQYXJ0Q29udHJvbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-a1ilplpmwq
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
 
-[/home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-ob25z11umk
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0v8dobaw0m
+
+[U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-5pfh1bs15d

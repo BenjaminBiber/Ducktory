@@ -1,0 +1,43 @@
+﻿@using DuckLibrary.Models
+@inject IJSRuntime Js
+@inject ISnackbar Snackbar
+
+<div class="row w-100 gap-md-3 gap-1 p-2">
+    <div class="col d-flex justify-content-center align-items-center">
+        <MudButton OnClick="GetPicture" Size="Size.Large" Color="Color.Tertiary" Variant="Variant.Filled" ButtonType="ButtonType.Button" Class="w-100">Download</MudButton>
+    </div>
+    <div class="col-1  d-flex justify-content-center align-items-center">
+        <MudIconButton OnClick="CopyPicture" Icon="@Icons.Material.Filled.ContentCopy" Color="Color.Secondary" Size="Size.Medium"></MudIconButton>
+    </div>
+    <div class="col-1  d-flex justify-content-center align-items-center">
+        <MudIconButton OnClick="RandomizeDuck" Icon="@Icons.Material.Filled.Shuffle" Color="Color.Secondary" Size="Size.Medium"></MudIconButton>
+    </div>
+</div>
+
+@code {
+    [Parameter] public List<DuckPart> Value { get; set; } = new List<DuckPart>();
+    [Parameter] public EventCallback<List<DuckPart>> ValueChanged { get; set; }
+    
+    private async Task CopyPicture()
+    {
+        await Js.InvokeVoidAsync("CopyCanvasToClipboard");
+        Snackbar.Add("Bild erfolgreich kopiert", Severity.Success);
+    }
+    
+    private async Task GetPicture()
+    {
+        await Js.InvokeVoidAsync("DownloadImage");
+        Snackbar.Add("Bild erfolgreich heruntergeladen", Severity.Success);
+    }
+    
+    private async Task RandomizeDuck()
+    {
+        var rnd = new Random();
+        foreach (var item in Value)
+        {
+            item.CurrentPicture = item.Images[rnd.Next(item.Images.Count)];
+        }
+
+        await ValueChanged.InvokeAsync(Value);
+    }
+}

@@ -6,39 +6,90 @@
 @using Ducktory.Components.Components
 @inject IJSRuntime Js
 @inject CmsService Cms
+@inject DuckService DuckService
 
 <PageTitle>Enten-Konfigurator</PageTitle>
 
-<div class="row main-container">
+<div class="row main-container g-0">
     @*Canvas*@
-    <div class="col-lg-6 col-12 position-relative d-flex align-items-center justify-content-center">
-        <MudPaper Class="w-75 ma-5 pa-4 ma-5 rounded" Elevation="2">
-            <canvas class="w-100 h-100 rounded" id="myCanvas"></canvas>
+    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
+        <MudPaper Class="w-75 m-0 p-4 m-lg-5 rounded" Elevation="2">
+            <canvas class="w-100 h-100 rounded z-2" id="myCanvas"></canvas>
         </MudPaper>
     </div>
     
     @*Controls*@
-    <div class="col-lg-6 col-12 pa-3 d-flex align-items-center justify-content-center">
-        <MudPaper Class="w-100 ma-5 pa-5 ma-5 rounded" Elevation="2">
-            @for (int i = 0; i < DuckParts.Count; i++)
-            {
-                var index = i;
-                <DuckPartControl
-                    Value="DuckParts[index]"
-                    ValueChanged="value => DuckParts[index] = value"/>
-            }
+    <div class="col-lg-6 col-12 p-md-3 gap-2 d-flex flex-column align-items-center justify-content-center">
+        <MudPaper Class="w-100 m-3 pt-1 p-3 m-md-2 mt-0 mt-md-2 rounded" Elevation="2">
+            <div class="row mb-1">
+                <div class="row g-0" style="cursor: pointer" @onclick="() => _expanded = !_expanded">
+                    <div class="d-flex align-items-center ml-3 col-1">
+                        <MudToggleIconButton @bind-Toggled="_expanded" Icon="@Icons.Material.Filled.KeyboardArrowDown" ToggledIcon="@Icons.Material.Filled.KeyboardArrowUp"></MudToggleIconButton>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start mb-0 col">
+                        <MudText Typo="Typo.h6">Komponenten</MudText>
+                    </div>
+
+                </div>
+            </div>
+            <MudCollapse Expanded="!_expanded">
+
+                @foreach (var x in DuckParts
+                              .Select((p, i) => new { Part = p, Index = i })
+                              .OrderByDescending(x => x.Part.SortOrder))
+                {
+                    var index = x.Index;
+
+                    <DuckPartControl @key="x.Part"
+                                     Value="DuckParts[index]"
+                                     ValueChanged="v => DuckParts[index] = v"
+                                     ListValue="DuckParts"
+                                     ListValueChanged="list => DuckService.DuckParts = list"/>
+                }
+            </MudCollapse>
+        </MudPaper>
+        <MudPaper Class="w-100 m-3 pt-1 p-3 m-md-2 mt-0 mt-md-2 rounded" Elevation="2">
+            <div class="row mb-1">
+                <div class="row g-0" style="cursor: pointer" @onclick="() => _expanded = !_expanded">
+                    <div class="d-flex align-items-center ml-3 col-1">
+                        <MudToggleIconButton @bind-Toggled="_expanded" Icon="@Icons.Material.Filled.KeyboardArrowDown" ToggledIcon="@Icons.Material.Filled.KeyboardArrowUp"></MudToggleIconButton>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start mb-0 col">
+                        <MudText Typo="Typo.h6">Filter</MudText>
+                    </div>
+                    <div class="col-1">
+                        <MudIconButton Icon="@Icons.Material.Filled.Autorenew" Size="Size.Medium" Color="Color.Primary" OnClick="args => filterSettings = new FilterSettings()"></MudIconButton>
+                    </div>
+
+                </div>
+            </div>
+            <MudCollapse Expanded="_expanded">
+                <MudSlider @bind-Value="filterSettings.BlurPx" Min="0" Max="20" Step="1" >Blur (px)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.BrightnessPct" Min="0" Max="200" Step="1" >Brightness (%)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.ContrastPct" Min="0" Max="200" Step="1" >Contrast (%)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.GrayscalePct" Min="0" Max="100" Step="1" >Grayscale (%)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.HueDeg" Min="-180" Max="180" Step="1" >Hue (°)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.InvertPct" Min="0" Max="100" Step="1" >Invert (%)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.OpacityPct" Min="0" Max="100" Step="1" >Opacity (%)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.SaturatePct" Min="0" Max="200" Step="1" >Saturate (%)</MudSlider>
+                <MudSlider @bind-Value="filterSettings.SepiaPct" Min="0" Max="100" Step="1" >Sepia (%)</MudSlider>
+            </MudCollapse>
+        </MudPaper>
+        <MudPaper Class="w-100 m-3 p-2 rounded">
+            <ActionControls Value="DuckParts" ValueChanged="(List<DuckPart> parts) => HandleRandomize(parts)"></ActionControls>
         </MudPaper>
     </div>
 </div>
 
 @code {
-    
-    private List<DuckPart> DuckParts { get; set; } = new List<DuckPart>();
-    private List<string> CanvasImages => DuckParts.Where(x => x.IsVisible && !String.IsNullOrEmpty(x.CurrentPicture.Bild.Original)).OrderBy(x => x.SortOrder).Select(x => x.CurrentPicture.Bild.Original).ToList();
-    
+    private List<DuckPart> DuckParts => DuckService.DuckParts;
+    private List<string> CanvasImages => DuckService.CanvasImages;
+    private bool _expanded;
+    private FilterSettings filterSettings = new();
+
     protected override async Task OnInitializedAsync()
     {
-        DuckParts = await Cms.GetItems<List<DuckPart>, DuckPartDto>("DuckParts", "/collections/albums");
+        await DuckService.GetDuckParts(Cms);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -48,19 +99,13 @@
 
     private async Task SwitchPicture()
     {
-        if(CanvasImages.Any())
-        {
-            await Js.InvokeVoidAsync("renderImagesOnCanvas", (object)CanvasImages);
-        }
+        var filter = filterSettings.ToCanvasFilterString();
+        await Js.InvokeVoidAsync("renderImagesOnCanvas", (object)CanvasImages, false, filter);
     }
-    
-    private async Task CopyPicture()
+
+    private async Task HandleRandomize(List<DuckPart> duckParts)
     {
-        await Js.InvokeVoidAsync("CopyCanvasToClipboard");
-    }
-    
-    private async Task GetPicture()
-    {
-        await Js.InvokeVoidAsync("DownloadImage");
+        DuckService.DuckParts = duckParts;
+        await SwitchPicture();
     }
 }

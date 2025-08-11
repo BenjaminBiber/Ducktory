@@ -12,6 +12,6 @@ public class DuckPartImageDto
     [JsonPropertyName("Name")]
     public string Name { get; set; }
 
-    [JsonPropertyName("Ist Default?")]
+    [JsonPropertyName("Ist-Default")]
     public bool IstDefault { get; set; }
 }
