@@ -1,4 +1,4 @@
-#blazor-error-ui[b-a1ilplpmwq] {
+#blazor-error-ui[b-0v8dobaw0m] {
     background: lightyellow;
     bottom: 0;
     box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
@@ -10,7 +10,7 @@
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss[b-a1ilplpmwq] {
+    #blazor-error-ui .dismiss[b-0v8dobaw0m] {
         cursor: pointer;
         position: absolute;
         right: 0.75rem;
