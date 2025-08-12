@@ -27,7 +27,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build the Docker image
-      run: docker build Ducktory/Ducktory -f Ducktory/Ducktory/Dockerfile -t benjaminbiber/ducktory:latest
+      run: docker build Ducktory -f Ducktory/Ducktory/Dockerfile -t benjaminbiber/ducktory:latest
 
     - name: Push the Docker image to Docker Hub
       run: docker push benjaminbiber/ducktory:latest
