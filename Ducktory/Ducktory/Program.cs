@@ -10,7 +10,7 @@ builder.Services.AddMudServices();
 
 builder.Services.AddAutoMapper(typeof(InitilizeMappings).Assembly);
 builder.Services.AddScoped<HttpClient>();
-builder.Services.AddSingleton<CacheService>();
+builder.Services.AddScoped<CacheService>();
 builder.Services.AddScoped<CmsService>();
 builder.Services.AddScoped<DuckService>();
 builder.Services.AddHttpClient();
