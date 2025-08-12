@@ -12,7 +12,7 @@ builder.Services.AddAutoMapper(typeof(InitilizeMappings).Assembly);
 builder.Services.AddSingleton<HttpClient>();
 builder.Services.AddSingleton<CacheService>();
 builder.Services.AddSingleton<CmsService>();
-builder.Services.AddSingleton<DuckService>();
+builder.Services.AddScoped<DuckService>();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
@@ -20,7 +20,7 @@ builder.Services.AddControllers();
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("images-public", p => p
-        .AllowAnyOrigin()        // für anonymes Canvas-Laden
+        .AllowAnyOrigin()
         .AllowAnyHeader()
         .AllowAnyMethod());
 });
