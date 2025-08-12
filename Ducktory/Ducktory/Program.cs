@@ -9,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMudServices();
 
 builder.Services.AddAutoMapper(typeof(InitilizeMappings).Assembly);
-builder.Services.AddSingleton<HttpClient>();
-builder.Services.AddSingleton<CacheService>();
-builder.Services.AddSingleton<CmsService>();
+builder.Services.AddScoped<HttpClient>();
+builder.Services.AddScoped<CacheService>();
+builder.Services.AddScoped<CmsService>();
 builder.Services.AddScoped<DuckService>();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorComponents()
