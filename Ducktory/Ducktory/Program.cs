@@ -9,11 +9,17 @@ builder.Services.AddMudServices();
 builder.Services.AddCmsClient(opt => opt.BaseUrl = "https://backente.benjaminbiber.de/");
 builder.Services.AddScoped<DuckService>();
 builder.Services.AddHttpClient();
+var sslBypassHandler = new HttpClientHandler
+{
+    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+};
 builder.Services.AddHttpClient("proxy", client => { })
-    .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+    .ConfigurePrimaryHttpMessageHandler(() => sslBypassHandler);
+builder.Services.AddHttpClient("backente", client =>
     {
-        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-    });
+        client.BaseAddress = new Uri("https://backente.benjaminbiber.de/");
+    })
+    .ConfigurePrimaryHttpMessageHandler(() => sslBypassHandler);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddControllers();

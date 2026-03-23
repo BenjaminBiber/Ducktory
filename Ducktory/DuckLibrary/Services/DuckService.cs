@@ -23,6 +23,12 @@ public class DuckService
         .Select(x => ProxyUrl(x.CurrentPicture.Bild.AbsoluteUrl(BaseUrl)))
         .ToList();
 
+    public List<string> CanvasImagesAbsolute => DuckParts
+        .Where(x => x.IsVisible && !string.IsNullOrEmpty(x.CurrentPicture.Bild.Original))
+        .OrderBy(x => x.SortOrder)
+        .Select(x => x.CurrentPicture.Bild.AbsoluteUrl(BaseUrl))
+        .ToList();
+
     private static string ProxyUrl(string url) =>
         "/api/imageproxy?url=" + Uri.EscapeDataString(url);
 

@@ -24,7 +24,7 @@ public class DuckController : ControllerBase
     {
         await _duckService.GetDuckParts();
         await _duckService.RandomizeDuck();
-        var urls = _duckService.CanvasImages?.ToList() ?? [];
+        var urls = _duckService.CanvasImagesAbsolute?.ToList() ?? [];
         if (urls.Count == 0) return BadRequest("Keine Bild-URLs vorhanden.");
 
         var bytes = await MergeImagesAsync(urls, ct);
@@ -37,7 +37,7 @@ public class DuckController : ControllerBase
 
     private async Task<byte[]> MergeImagesAsync(List<string> urls, CancellationToken ct)
     {
-        var client = _http.CreateClient();
+        var client = _http.CreateClient("backente");
         var loaded = new List<Image<Rgba32>>();
         try
         {
