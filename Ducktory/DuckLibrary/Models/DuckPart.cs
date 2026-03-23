@@ -1,4 +1,6 @@
-﻿namespace DuckLibrary.Models;
+﻿using BenjaminBiber.CMS.Client.Models;
+
+namespace DuckLibrary.Models;
 
 public class DuckPart
 {
@@ -11,7 +13,7 @@ public class DuckPart
     {
         get
         {
-            if (_currentPicture.Bild != null && String.IsNullOrEmpty(_currentPicture.Bild.Original) && (Images != null || Images.Any()))
+            if (_currentPicture.Bild != null && string.IsNullOrEmpty(_currentPicture.Bild.Original) && (Images != null || Images.Any()))
             {
                 _currentPicture.Bild = (Images.FirstOrDefault(x => x.IsDefault) ?? new DuckPartImage()).Bild;
                 return _currentPicture;

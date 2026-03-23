@@ -11,20 +11,18 @@ public class DuckController : ControllerBase
 {
     private readonly IHttpClientFactory _http;
     private readonly DuckService _duckService;
-    private readonly CmsService _cmsService;
 
-    public DuckController(IHttpClientFactory http, DuckService duckService, CmsService cmsService)
+    public DuckController(IHttpClientFactory http, DuckService duckService)
     {
         _http = http;
         _duckService = duckService;
-        _cmsService = cmsService;
     }
 
     // GET /api/duck/picture   (lädt URLs aus deinem Service)
     [HttpGet("picture")]
     public async Task<IActionResult> GetPicture(CancellationToken ct)
     {
-        await _duckService.GetDuckParts(_cmsService);
+        await _duckService.GetDuckParts();
         await _duckService.RandomizeDuck();
         var urls = _duckService.CanvasImages?.ToList() ?? [];
         if (urls.Count == 0) return BadRequest("Keine Bild-URLs vorhanden.");

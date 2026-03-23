@@ -1,5 +1,4 @@
-using AutoMapper;
-using DuckLibrary;
+using BenjaminBiber.CMS.Client.DependencyInjection;
 using DuckLibrary.Services;
 using Ducktory.Components;
 using MudBlazor.Services;
@@ -7,11 +6,7 @@ using MudBlazor.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMudServices();
-
-builder.Services.AddAutoMapper(typeof(InitilizeMappings).Assembly);
-builder.Services.AddScoped<HttpClient>();
-builder.Services.AddScoped<CacheService>();
-builder.Services.AddScoped<CmsService>();
+builder.Services.AddCmsClient(opt => opt.BaseUrl = "https://backente.benjaminbiber.de/");
 builder.Services.AddScoped<DuckService>();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorComponents()

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ducktory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac6f0500c19f2f8edeb0385d2148c30dcbc488eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36fc6c87427694ed21cca7972d7dcb1a87d2eed8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ducktory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ducktory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

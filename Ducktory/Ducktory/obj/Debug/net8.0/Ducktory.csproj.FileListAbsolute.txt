@@ -55,7 +55,6 @@ U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/Ducktory.d
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/Ducktory.runtimeconfig.json
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/Ducktory.dll
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/Ducktory.pdb
-U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/AutoMapper.dll
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/Microsoft.AspNetCore.Authorization.dll
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/Microsoft.AspNetCore.Components.dll
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/Microsoft.AspNetCore.Components.Forms.dll
@@ -80,11 +79,6 @@ U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/Ducktory.M
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/Ducktory.sourcelink.json
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/staticwebassets.build.json
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/staticwebassets.development.json
-U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/staticwebassets/msbuild.Ducktory.Microsoft.AspNetCore.StaticWebAssets.props
-U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/staticwebassets/msbuild.build.Ducktory.props
-U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Ducktory.props
-U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Ducktory.props
-U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/staticwebassets.pack.json
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/scopedcss/Components/Pages/Home.razor.rz.scp.css
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/scopedcss/bundle/Ducktory.styles.css
@@ -95,7 +89,6 @@ U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/refint/Duc
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/Ducktory.pdb
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/Ducktory.genruntimeconfig.cache
 U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/obj/Debug/net8.0/ref/Ducktory.dll
-U:/Projects/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/AutoMapper.dll
 /home/benjaminb/RiderProjects/Ducktory/Ducktory/Ducktory/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\appsettings.Development.json
@@ -107,8 +100,6 @@ U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Ducktory.d
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Ducktory.runtimeconfig.json
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Ducktory.dll
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Ducktory.pdb
-U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\AutoMapper.dll
-U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -133,11 +124,6 @@ U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\Ducktory.M
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\Ducktory.sourcelink.json
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets.build.json
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets.development.json
-U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets\msbuild.Ducktory.Microsoft.AspNetCore.StaticWebAssets.props
-U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets\msbuild.build.Ducktory.props
-U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Ducktory.props
-U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Ducktory.props
-U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets.pack.json
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\scopedcss\bundle\Ducktory.styles.css
@@ -149,3 +135,16 @@ U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\Ducktory.p
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\Ducktory.genruntimeconfig.cache
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\ref\Ducktory.dll
 U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\BenjaminBiber.CMS.Client.dll
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\bin\Debug\net8.0\Ducktory.staticwebassets.endpoints.json
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\rpswa.dswa.cache.json
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\rjimswa.dswa.cache.json
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets.build.json.cache
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+U:\Projects\RiderProjects\Ducktory\Ducktory\Ducktory\obj\Debug\net8.0\swae.build.ex.cache

@@ -2,7 +2,7 @@
 
 <div class="row g-0 mb-2">
     <div class="col-2 d-none d-lg-flex align-items-center justify-content-center">
-        @if (!IsLegend && Value.CurrentPicture != null)
+        @if (!IsLegend && Value.CurrentPicture != null && Value.CurrentPicture.Bild != null && Value.CurrentPicture.Name != null)
         {
             <img class="w-50 h-75 mr-2" src="@Value.CurrentPicture.Bild.Original" alt="@Value.CurrentPicture.Name"/>
         }

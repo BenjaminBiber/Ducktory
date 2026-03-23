@@ -1,11 +1,8 @@
 ﻿@page "/"
-@using AutoMapper
-@using DuckLibrary.MappingModels
 @using DuckLibrary.Models
 @using DuckLibrary.Services
 @using Ducktory.Components.Components
 @inject IJSRuntime Js
-@inject CmsService Cms
 @inject DuckService DuckService
 
 <PageTitle>Enten-Konfigurator</PageTitle>
@@ -89,7 +86,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await DuckService.GetDuckParts(Cms);
+        await DuckService.GetDuckParts();
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
