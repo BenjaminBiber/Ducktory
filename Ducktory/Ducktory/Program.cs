@@ -9,6 +9,11 @@ builder.Services.AddMudServices();
 builder.Services.AddCmsClient(opt => opt.BaseUrl = "https://backente.benjaminbiber.de/");
 builder.Services.AddScoped<DuckService>();
 builder.Services.AddHttpClient();
+builder.Services.AddHttpClient("proxy", client => { })
+    .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+    {
+        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+    });
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddControllers();

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DuckLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36fc6c87427694ed21cca7972d7dcb1a87d2eed8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3160e56bd8090dfec20e84483fdc07f1c426643e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DuckLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DuckLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
