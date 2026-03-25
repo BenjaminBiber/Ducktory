@@ -9,7 +9,10 @@
       "Bash(dotnet tool:*)",
       "Bash(ilspycmd:*)",
       "WebFetch(domain:backente.benjaminbiber.de)",
-      "Bash(dotnet build:*)"
+      "Bash(dotnet build:*)",
+      "Bash(find ~/.nuget/packages/benjaminbiber.cms.client -name *.cs -o -name *.xml)",
+      "Bash(dotnet-ilspy ~/.nuget/packages/benjaminbiber.cms.client/0.0.0/lib/net8.0/BenjaminBiber.CMS.Client.dll)",
+      "Bash(export PATH=$PATH:/home/benjamin/.dotnet/tools)"
     ]
   }
 }
